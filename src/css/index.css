@@ -1,0 +1,313 @@
+/* Reset y fuente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Colores principales */
+:root {
+    --gris-fondo: #f5f5f5;
+    --amarillo: #ffd600;
+    --blanco: #fff;
+    --negro: #181818;
+    --gris-oscuro: #232323;
+    --morado: #a566e5;
+}
+
+/* Fondo general */
+body {
+    background: var(--gris-fondo);
+    color: var(--negro);
+    min-height: 100vh;
+}
+
+/* Header */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--negro);
+    color: var(--amarillo);
+    padding: 12px 30px;
+}
+
+.logo-small {
+    color: var(--amarillo);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    transition: color 0.2s;
+}
+.logo-small:hover {
+    color: var(--blanco);
+}
+
+.login-button {
+    background: var(--amarillo);
+    color: var(--negro);
+    border: none;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.login-button:hover {
+    background: var(--negro);
+    color: var(--amarillo);
+    border: 1px solid var(--amarillo);
+}
+
+/* Navegación principal */
+.main-nav {
+    display: flex;
+    background: var(--gris-oscuro);
+    padding: 10px 30px;
+    border-top: 2px solid var(--amarillo);
+    gap: 20px;
+}
+.main-nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 18px;
+    border-radius: 15px;
+    transition: background 0.2s, color 0.2s;
+}
+.main-nav a:hover {
+    background: var(--amarillo);
+    color: var(--negro);
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: linear-gradient(90deg, var(--amarillo) 0%, var(--blanco) 100%);
+    color: var(--negro);
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid var(--negro);
+}
+.hero-banner h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+.hero-banner p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+.cta-button {
+    background: var(--negro);
+    color: var(--amarillo);
+    border: none;
+    padding: 14px 38px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.cta-button:hover {
+    background: var(--amarillo);
+    color: var(--negro);
+    border: 2px solid var(--negro);
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 10px 30px 10px;
+    background: var(--blanco);
+    flex-wrap: wrap;
+}
+.feature {
+    background: var(--gris-fondo);
+    border: 2px solid var(--amarillo);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(24,24,24,0.07);
+    padding: 32px 28px;
+    min-width: 260px;
+    max-width: 340px;
+    flex: 1 1 260px;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.feature h2 {
+    color: var(--negro);
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.feature p {
+    color: #444;
+    font-size: 1rem;
+}
+.feature:hover {
+    box-shadow: 0 8px 32px rgba(24,24,24,0.13);
+    transform: translateY(-6px) scale(1.03);
+}
+
+/* Footer */
+footer {
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 0;
+    margin-top: 40px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0 10px 0;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: var(--blanco);
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: var(--negro);
+    text-decoration: none;
+}
+.wrapper .icon:hover {
+    color: var(--amarillo);
+    background: var(--negro);
+}
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    line-height: 1.5;
+    font-size: 14px;
+    background: var(--negro);
+    color: var(--amarillo);
+    padding: 5px 12px;
+    border-radius: 5px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 2;
+}
+.wrapper .icon:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: var(--negro);
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #3b5999;
+    color: #fff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #46c1f6;
+    color: #fff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #e1306c;
+    color: #fff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background: #de463b;
+    color: #fff;
+}
+
+/* Info del gimnasio en el footer */
+.gym-info {
+    background: var(--gris-oscuro);
+    color: var(--amarillo);
+    text-align: center;
+    padding: 18px 0 12px 0;
+}
+.footer-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+.gym-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: var(--blanco);
+}
+.copyright {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .main-nav {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 10px;
+    }
+}
+@media (max-width: 600px) {
+    .top-bar, .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 8px;
+    }
+    .hero-banner {
+        padding: 30px 5px 20px 5px;
+    }
+    .features {
+        padding: 20px 2px 15px 2px;
+    }
+    .feature {
+        padding: 18px 8px;
+        min-width: 180px;
+    }
+    .wrapper {
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 18px 0 6px 0;
+    }
+    .footer-logo {
+        width: 36px;
+        height: 36px;
+    }
+}

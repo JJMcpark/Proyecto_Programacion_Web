@@ -1,0 +1,14 @@
+{
+  "name": "proy-final-prog-web",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}

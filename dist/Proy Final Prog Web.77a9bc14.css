@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.top-bar {
+  color: #fff;
+  background-color: #121736;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  display: flex;
+}
+
+.logo-small {
+  color: #a566e5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.match-highlight {
+  color: #fff;
+  background-color: #461e73;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.time-display {
+  color: #a566e5;
+  font-weight: bold;
+}
+
+.login-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #333;
+  border: none;
+  padding: 5px 15px;
+}
+
+.main-nav {
+  background-color: #121736;
+  border-top: 1px solid #2a2a4a;
+  padding: 10px 15px;
+  display: flex;
+}
+
+.main-nav a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.team-photo {
+  width: 100%;
+  overflow: hidden;
+}
+
+.team-photo img {
+  width: 100%;
+  display: block;
+}
+
+.content-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 250px;
+  margin: 10px;
+}
+
+.social-bar {
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #004d98, #a50044);
+  padding: 15px;
+}
+
+.social-icons {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.social-icons a {
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 205px;
+  height: 40px;
+  font-size: 12px;
+  text-decoration: none;
+  display: flex;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.youtube {
+  background-color: red;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.tiktok {
+  background-color: #000;
+}
+
+.club-info {
+  color: #fff;
+  text-align: center;
+  background-color: #121736;
+  padding: 15px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.club-name {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 12px;
+}
+/*# sourceMappingURL=Proy Final Prog Web.77a9bc14.css.map */

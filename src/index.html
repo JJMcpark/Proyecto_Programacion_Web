@@ -10,43 +10,76 @@
 <body>
     <header>
         <div class="top-bar">
-            <a href="index.html" class="logo-small">Gym Solution</a>
+            <a href="index.html" class="logo-small">GYM SOLUTION</a>
             <button class="login-button">Login</button>
         </div>
         
         <nav class="main-nav">
-            <a href="calendar.html">Calendario</a>
+            <a href="#about">Quiénes Somos</a>
+            <a href="#calendar">Calendario</a>
             <a href="store.html">Tienda</a>
-            <a href="about.html">Quiénes Somos</a>
             <a href="philosophy.html">Filosofía</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero-banner">
+        <section class="bienvenida">
             <h1>Bienvenido a Gym Solution</h1>
             <p>Tu camino hacia un estilo de vida saludable comienza aquí.</p>
             <button class="cta-button">Únete Ahora</button>
         </section>
 
-        <section class="features">
-            <div class="feature">
+        <section class="caracteristicas">
+            <div class="caracteristica">
                 <h2>Entrenadores Expertos</h2>
                 <p>Contamos con los mejores profesionales para guiarte.</p>
             </div>
-            <div class="feature">
+            <div class="caracteristica">
                 <h2>Equipos de Última Generación</h2>
                 <p>Instalaciones modernas para maximizar tu rendimiento.</p>
             </div>
-            <div class="feature">
+            <div class="caracteristica">
                 <h2>Clases Personalizadas</h2>
                 <p>Programas adaptados a tus objetivos y necesidades.</p>
             </div>
         </section>
+
+        <section id="slider-c" class="slider">
+            <div class="slider-container">
+                <ul>
+                    <img src="./assets/images/entrenador .jpeg" alt="" />
+                    <img src="./assets/images/entrenador (1).jpg" alt="" />
+                    <img src="./assets/images/entrenador (2).jpg" alt="" />
+                    <img src="./assets/images/entrenador (3).jpg" alt="" />
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonios">
+            <h2>Lo que dicen nuestros miembros</h2>
+            <div class="testimonio">
+                <p>"Gym Solution ha cambiado mi vida. ¡Recomiendo sus servicios!"</p>
+                <span>- Juan Pérez</span>
+            </div>
+            <div class="testimonio">
+                <p>"El ambiente es increíble y los entrenadores son muy profesionales."</p>
+                <span>- María López</span>
+            </div>
+            <div class="testimonio">
+                <p>"He alcanzado mis metas gracias a Gym Solution. ¡Gracias!"</p>
+                <span>- Carlos García</span>
+            </div>
+        </section>
+
+        <section id="about" class="about-us">
+            <h2>Sobre Nosotros</h2>
+            <p>En Gym Solution, nos dedicamos a ofrecerte la mejor experiencia de entrenamiento. Nuestro equipo está comprometido con tu éxito y bienestar.</p>
+            <button class="about-button" onclick="location.href='pages/about.html'">Saber Más</button>
+
     </main>
 
     <footer>
-        <div class="wrapper">
+        <div class="redes-sociales">
             <a href="#" class="icon facebook">
                 <div class="tooltip">Facebook</div>
                 <span><i class="fab fa-facebook-f"></i></span>
@@ -66,9 +99,9 @@
         </div>
         
         <div class="gym-info">
-            <img alt="Gym Solution logo" class="footer-logo">
+            <img src="./assets/iconos/logo.svg" alt="Gym Solution logo" class="footer-logo">
             <p class="gym-name">Gym Solution</p>
-            <p class="copyright">Copyright © 2023 Gym Solution. Todos los derechos reservados.</p>
+            <p class="copyright">Copyright © 2025 Gym Solution. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>

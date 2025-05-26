@@ -5,78 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Solution</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/auth.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
 </head>
 <body>
     <header>
         <div class="top-bar">
-            <a href="index.html" class="logo-small">GYM SOLUTION</a>
-            <button class="login-button">Login</button>
+            <a href="index.html" class="logo-small">
+                <i class="fas fa-dumbbell"></i> GYM SOLUTION
+            </a>
+            <button class="login-button" onclick="openLoginModal()">Login</button>
         </div>
-        
+
+        <!-- Modales de Login y Registro -->
+        <div id="loginModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+                <h2>Iniciar Sesión</h2>
+                <form action="#" method="POST">
+                    <label for="modal-login-email">Correo Electrónico:</label>
+                    <input type="email" id="modal-login-email" name="email" required>
+                    <label for="modal-login-password">Contraseña:</label>
+                    <input type="password" id="modal-login-password" name="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+        <div id="registerModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeRegisterModal()">&times;</span>
+                <h2>Registro</h2>
+                <form action="#" method="POST">
+                    <label for="modal-register-name">Nombre:</label>
+                    <input type="text" id="modal-register-name" name="name" required>
+                    <label for="modal-register-email">Correo Electrónico:</label>
+                    <input type="email" id="modal-register-email" name="email" required>
+                    <label for="modal-register-password">Contraseña:</label>
+                    <input type="password" id="modal-register-password" name="password" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+
         <nav class="main-nav">
-            <a href="./pages/about.html">Quiénes Somos</a>
-            <a href="./pages/calendar.html">Calendario</a>
-            <a href="./pages/store.html">Tienda</a>
-            <a href="./pages/philosophy.html">Filosofía</a>
+            <a href="./pages/about.html"><i class="fas fa-users"></i> Quiénes Somos</a>
+            <a href="./pages/calendar.html"><i class="fas fa-calendar-alt"></i> Calendario</a>
+            <a href="./pages/store.html"><i class="fas fa-shopping-cart"></i> Tienda</a>
+            <a href="./pages/philosophy.html"><i class="fas fa-heartbeat"></i> Filosofía</a>
+            <div class="buscador">
+                <input type="text" class="barra-busqueda" placeholder="Buscar...">
+                <button class="boton-busqueda"><i class="fas fa-search"></i></button>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="bienvenida">
-            <h1>Bienvenido a Gym Solution</h1>
-            <p>Tu camino hacia un estilo de vida saludable comienza aquí.</p>
-            <button class="cta-button">Únete Ahora</button>
-        </section>
+    <div class="container">
+        <main>
+            <!-- Hero Section -->
+            <section class="bienvenida">
+                <h1>¡Bienvenido a <span style="color:var(--morado)">Gym Solution</span>!</h1>
+                <p>Transforma tu cuerpo y mente con nosotros.<br>Tu camino hacia un estilo de vida saludable comienza aquí.</p>
+                <button class="default-button" onclick="openRegisterModal()">
+                    <i class="fas fa-user-plus"></i> Únete Ahora
+                </button>
+            </section>
 
-        <section class="caracteristicas">
-            <div class="caracteristica">
-                <h2>Entrenadores Expertos</h2>
-                <p>Contamos con los mejores profesionales para guiarte.</p>
-            </div>
-            <div class="caracteristica">
-                <h2>Equipos de Última Generación</h2>
-                <p>Instalaciones modernas para maximizar tu rendimiento.</p>
-            </div>
-            <div class="caracteristica">
-                <h2>Clases Personalizadas</h2>
-                <p>Programas adaptados a tus objetivos y necesidades.</p>
-            </div>
-        </section>
+            <!-- Slider de Entrenadores -->
+            <section id="slider-c" class="slider" style="margin: 50px 0;">
+                <div class="slider-fotos">
+                    <ul>
+                        <li><img src="./assets/images/entrenador .jpeg" alt="Entrenador 1" /></li>
+                        <li><img src="./assets/images/entrenador (1).jpg" alt="Entrenador 2" /></li>
+                        <li><img src="./assets/images/entrenador (2).jpg" alt="Entrenador 3" /></li>
+                        <li><img src="./assets/images/entrenador (3).jpg" alt="Entrenador 4" /></li>
+                    </ul>
+                </div>
+            </section>
 
-        <section id="slider-c" class="slider">
-            <div class="slider-container">
-                <ul>
-                    <img src="./assets/images/entrenador .jpeg" alt="" />
-                    <img src="./assets/images/entrenador (1).jpg" alt="" />
-                    <img src="./assets/images/entrenador (2).jpg" alt="" />
-                    <img src="./assets/images/entrenador (3).jpg" alt="" />
-                </ul>
-            </div>
-        </section>
+            <!-- Características del Gimnasio -->
+            <section class="caracteristicas">
+                <div class="caracteristica">
+                    <i class="fas fa-dumbbell fa-2x" style="color:var(--morado);"></i>
+                    <h2>Equipamiento Moderno</h2>
+                    <p>Contamos con máquinas y pesas de última generación para todos los niveles.</p>
+                </div>
+                <div class="caracteristica">
+                    <i class="fas fa-user-friends fa-2x" style="color:var(--amarillo);"></i>
+                    <h2>Entrenadores Expertos</h2>
+                    <p>Profesionales certificados que te acompañan en cada paso de tu progreso.</p>
+                </div>
+                <div class="caracteristica">
+                    <i class="fas fa-heartbeat fa-2x" style="color:var(--negro);"></i>
+                    <h2>Ambiente Saludable</h2>
+                    <p>Un espacio motivador, seguro y amigable para todos nuestros miembros.</p>
+                </div>
+            </section>
 
-        <section class="testimonios">
-            <h2>Lo que dicen nuestros miembros</h2>
-            <div class="testimonio">
-                <p>"Gym Solution ha cambiado mi vida. ¡Recomiendo sus servicios!"</p>
-                <span>- Juan Pérez</span>
-            </div>
-            <div class="testimonio">
-                <p>"El ambiente es increíble y los entrenadores son muy profesionales."</p>
-                <span>- María López</span>
-            </div>
-            <div class="testimonio">
-                <p>"He alcanzado mis metas gracias a Gym Solution. ¡Gracias!"</p>
-                <span>- Carlos García</span>
-            </div>
-        </section>
+            <!-- Testimonios -->
+            <section id="testimonios" class="testimonios">
+                <h2 style="color:var(--amarillo);">Lo que dicen nuestros miembros</h2>
+                <div class="testimonio">
+                    <div class="testimonio-box">
+                        <p>"El ambiente es increíble y los entrenadores son muy profesionales."</p>
+                        <span>- Juan Pérez</span>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <div class="testimonio-box">
+                        <p>"He alcanzado mis metas gracias a Gym Solution. ¡Gracias!"</p>
+                        <span>- María López</span>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <div class="testimonio-box">
+                        <p>"Las clases grupales son súper motivadoras y divertidas."</p>
+                        <span>- Carlos García</span>
+                    </div>
+                </div>
+            </section>
 
-        <section id="about" class="about-us">
-            <h2>Sobre Nosotros</h2>
-            <p>En Gym Solution, nos dedicamos a ofrecerte la mejor experiencia de entrenamiento. Nuestro equipo está comprometido con tu éxito y bienestar.</p>
-            <button class="about-button" onclick="location.href='pages/about.html'">Saber Más</button>
-
-    </main>
+            <!-- Contacto -->
+            <section class="contact" style="background: var(--blanco); box-shadow: 0 4px 16px var(--sombra); max-width: 700px; margin: 50px auto 0; border-radius: 16px; padding: 30px;">
+                <h2 style="color:var(--morado);">Contáctanos</h2>
+                <p>¿Tienes dudas o quieres más información? ¡Escríbenos!</p>
+                <form action="#" method="POST">
+                    <label for="contact-name">Nombre:</label>
+                    <input type="text" id="contact-name" name="name" required>
+                    <label for="contact-email">Correo Electrónico:</label>
+                    <input type="email" id="contact-email" name="email" required>
+                    <label for="contact-message">Mensaje:</label>
+                    <textarea id="contact-message" name="message" required></textarea>
+                    <button type="submit" class="default-button"><i class="fas fa-paper-plane"></i> Enviar</button>
+                </form>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <div class="redes-sociales">
@@ -97,12 +160,12 @@
                 <span><i class="fab fa-youtube"></i></span>
             </a>
         </div>
-        
         <div class="gym-info">
             <img src="./assets/iconos/logo.svg" alt="Gym Solution logo" class="footer-logo">
             <p class="gym-name">Gym Solution</p>
             <p class="copyright">Copyright © 2025 Gym Solution. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="./js/auth.js"></script>
 </body>
 </html>

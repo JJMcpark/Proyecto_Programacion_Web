@@ -33,6 +33,12 @@ body {
     width: 100%;
 }
 
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .logo-small {
     color: var(--amarillo);
     text-decoration: none;
@@ -69,7 +75,7 @@ body {
 
 main {
     width: 100%;
-    min-height: calc(100vh - 200px); /* Ajustar según la altura del header */
+    min-height: calc(100vh - 200px);
 }
 
 .bienvenida {
@@ -145,36 +151,6 @@ main {
 .caracteristica:hover {
     box-shadow: 0 8px 32px rgba(24,24,24,0.13);
     transform: translateY(-6px) scale(1.03);
-}
-
-.slider {
-    overflow: hidden;
-    width: 100%;
-    max-width: 100%; /* Cambiado de 800px a 100% */
-    margin: auto;
-    border-radius: 10px;
-    align-items: center;
-}
-
-.slider-fotos ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    padding: 0;
-    width: 100%;
-    animation: slide 20s infinite alternate;
-}
-
-.slider-fotos li {
-    min-width: 100%;
-}
-
-.slider-fotos img {
-    width: 100%;
-    display: block;
-    height: 400px; 
-    object-fit: cover; 
 }
 
 footer {
@@ -298,19 +274,49 @@ footer {
 .buscador {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    max-width: 600px;
+    background: var(--blanco);
+    border: 2px solid var(--gris-oscuro);
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.buscador:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-color: var(--amarillo);
 }
 
 .barra-busqueda {
-    flex: 1;
-    padding: 10px 15px;
-    border: 1px solid var(--gris-oscuro);
-    border-radius: 20px;
-    font-size: 1rem;
+    border: none;
     outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    padding: 8px 10px;
+    font-size: 1rem;
+    flex: 1;
+    border-radius: 20px;
+}
+
+.boton-busqueda {
+    background: var(--amarillo);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.boton-busqueda i {
+    color: var(--negro);
+    font-size: 1rem;
+}
+
+.boton-busqueda:hover {
+    background: var(--negro);
+    transform: scale(1.1);
+}
+
+.boton-busqueda:hover i {
+    color: var(--amarillo);
 }
 
 .about-us {
@@ -336,7 +342,7 @@ footer {
     box-shadow: 0 4px 6px var(--sombra);
     margin: 20px auto;
     max-width: 500px;
-    background-color: #f9f9f9;
+    background: var(--gris-fondo);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -354,65 +360,6 @@ footer {
     box-sizing: border-box;
 }
 
-@media (max-width: 900px) {
-    .caracteristicas {
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-        padding: 20px 10px;
-    }
-    .main-nav {
-        flex-direction: column;
-        gap: 8px;
-        padding: 10px 10px;
-    }
-}
-
-@media (max-width: 600px) {
-    .top-bar, .main-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 8px;
-    }
-    .bienvenida {
-        padding: 30px 10px 20px 10px;
-    }
-    .caracteristicas {
-        padding: 20px 5px 15px 5px;
-    }
-    .caracteristica {
-        padding: 18px 8px;
-        min-width: 180px;
-    }
-    .redes-sociales {
-        flex-wrap: wrap;
-        gap: 4px;
-        padding: 18px 0 6px 0;
-    }
-    .footer-logo {
-        width: 36px;
-        height: 36px;
-    }
-    .testimonios {
-        padding: 0 10px;
-    }
-}
-
-@keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-
-<!-- Contactos -- >
 .contactos-section {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     padding: 80px 0;
@@ -526,7 +473,6 @@ footer {
     transform: translateY(-1px);
 }
 
-/* Información de contacto */
 .contactos-info {
     display: flex;
     flex-direction: column;
@@ -639,4 +585,64 @@ footer {
         height: 60px;
         font-size: 2rem;
     }
+}
+
+
+@media (max-width: 900px) {
+    .caracteristicas {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 20px 10px;
+    }
+    .main-nav {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 10px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .top-bar, .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 8px;
+    }
+    .bienvenida {
+        padding: 30px 10px 20px 10px;
+    }
+    .caracteristicas {
+        padding: 20px 5px 15px 5px;
+    }
+    .caracteristica {
+        padding: 18px 8px;
+        min-width: 180px;
+    }
+    .redes-sociales {
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 18px 0 6px 0;
+    }
+    .footer-logo {
+        width: 36px;
+        height: 36px;
+    }
+    .testimonios {
+        padding: 0 10px;
+    }
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }

@@ -15,10 +15,15 @@
             <a href="index.html" class="logo-small">
                 <i class="fas fa-dumbbell"></i> GYM SOLUTION
             </a>
+            <div class="buscador">
+                <input type="text" class="barra-busqueda" placeholder="Buscar...">
+                <button class="boton-busqueda"><i class="fas fa-search"></i></button>
+            </div>
+
+            
             <button class="login-button" onclick="openLoginModal()">Login</button>
         </div>
 
-        <!-- Modales de Login y Registro -->
         <div id="loginModal" class="modal" style="display: none;">
             <div class="modal-content">
                 <span class="close" onclick="closeLoginModal()">&times;</span>
@@ -52,16 +57,10 @@
             <a href="./pages/about.html"><i class="fas fa-users"></i> Quiénes Somos</a>
             <a href="./pages/calendar.html"><i class="fas fa-calendar-alt"></i> Calendario</a>
             <a href="./pages/store.html"><i class="fas fa-shopping-cart"></i> Tienda</a>
-            <a href="./pages/philosophy.html"><i class="fas fa-heartbeat"></i> Filosofía</a>
-            <div class="buscador">
-                <input type="text" class="barra-busqueda" placeholder="Buscar...">
-                <button class="boton-busqueda"><i class="fas fa-search"></i></button>
-            </div>
         </nav>
     </header>
 
         <main>
-            <!-- Hero Section -->
             <section class="bienvenida">
                 <h1>¡Bienvenido a <span style="color:var(--morado)">Gym Solution</span>!</h1>
                 <p>Transforma tu cuerpo y mente con nosotros.<br>Tu camino hacia un estilo de vida saludable comienza aquí.</p>
@@ -70,7 +69,6 @@
                 </button>
             </section>
 
-            <!-- Galeria -->
             <section>
                 <div class="carousel">
                 <input type="radio" name="carousel" id="slide1" checked>
@@ -121,7 +119,6 @@
             </div>
             </section>
 
-            <!-- Características del Gimnasio -->
             <section class="caracteristicas">
                 <div class="caracteristica">
                     <i class="fas fa-dumbbell fa-2x" style="color:var(--morado);"></i>
@@ -140,7 +137,6 @@
                 </div>
             </section>
 
-            <!-- Galeria de tienda -->
             <section class="gallery-section">
                 <h2 class="gallery-title">Descubre nuestra colección</h2>
 
@@ -158,7 +154,6 @@
                 </div>
             </section>
 
-            <!-- Testimonios -->
             <section id="testimonios" class="testimonios">
                 <h2 style="color:var(--amarillo);">Lo que dicen nuestros miembros</h2>
                 <div class="testimonio">
@@ -181,7 +176,6 @@
                 </div>
             </section>
 
-            <!-- Contacto -->
             <section class="contactos-section">
             <div class="container">
                 <h2 class="contactos-title">Contáctanos</h2>

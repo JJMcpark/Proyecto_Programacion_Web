@@ -1,4 +1,4 @@
-/* Contenedor principal del carrusel */
+
 .carousel {
     
     max-width: 1000px;
@@ -10,13 +10,13 @@
     margin-bottom: 20px;
 }
 
-/* Ocultar los radio buttons para auto-play */
+
 .carousel input[type="radio"] {
     display: none;
-    pointer-events: none; /* Desactivar interacción manual */
+    pointer-events: none; 
 }
 
-/* Contenedor del carrusel */
+
 .carousel-container {
     position: relative;
     width: 100%;
@@ -26,7 +26,7 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Track que contiene todas las slides con animación auto-play */
+
 .carousel-track {
     display: flex;
     width: 500%;
@@ -34,7 +34,7 @@
     animation: autoSlide 15s infinite;
 }
 
-/* Cada slide individual */
+
 .carousel-slide {
     width: 20%;
     height: 100%;
@@ -42,7 +42,7 @@
     flex-shrink: 0;
 }
 
-/* Imágenes dentro de las slides */
+
 .carousel-slide img {
     width: 100%;
     height: 100%;
@@ -52,7 +52,6 @@
     transition: all 0.6s ease;
 }
 
-/* Overlay para las imágenes no activas */
 .carousel-slide::before {
     content: '';
     position: absolute;
@@ -66,7 +65,6 @@
     transition: opacity 0.6s ease;
 }
 
-/* Animación principal del carrusel */
 @keyframes autoSlide {
     0%, 18% { transform: translateX(0%); }
     20%, 38% { transform: translateX(-20%); }
@@ -165,7 +163,6 @@
     display: block;
 }
 
-/* Animación para los puntos indicadores */
 .control-dot:nth-child(1) { animation: dotActive1 15s infinite; }
 .control-dot:nth-child(2) { animation: dotActive2 15s infinite; }
 .control-dot:nth-child(3) { animation: dotActive3 15s infinite; }
@@ -200,13 +197,13 @@
     80%, 100% { background: white; transform: scale(1.2); }
 }
 
-/* Información de la imagen */
+
 .image-info {
     position: absolute;
     bottom: 60px;
     left: 30px;
     color: white;
-    z-index: 2;
+    z-index: 1;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
@@ -253,7 +250,6 @@
     80%, 100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Media Queries - Responsive */
 @media (max-width: 768px) {
     .carousel-container {
         height: 300px;
@@ -273,6 +269,7 @@
 .gallery-section {
     margin: 40px 0;
     padding: 0 20px;
+    display: grid;
 }
 .gallery-title {
     text-align: center;

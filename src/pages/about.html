@@ -6,6 +6,7 @@
     <title>Sobre Nosotros | Gym Solution</title>
     <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" type="text/css" href="../css/auth.css">
 </head>
 <body>
     <header>
@@ -15,10 +16,9 @@
         </div>
         
         <nav class="main-nav">
-            <a href="about.html">Quiénes Somos</a>
-            <a href="calendar.html">Calendario</a>
-            <a href="store.html">Tienda</a>
-            <a href="philosophy.html">Filosofía</a>
+            <a href="about.html"><i class="fas fa-users"></i> Quiénes Somos</a>
+            <a href="calendar.html"><i class="fas fa-calendar-alt"></i> Calendario</a>
+            <a href="store.html"><i class="fas fa-shopping-cart"></i> Tienda</a>
         </nav>
     </header>
     <main>
@@ -26,6 +26,65 @@
                 <h2 style="color:var(--morado);">Sobre Nosotros</h2>
                 <p>En <b>Gym Solution</b>, nos dedicamos a ofrecerte la mejor experiencia de entrenamiento. Nuestro equipo está comprometido con tu éxito y bienestar. ¡Ven y forma parte de nuestra comunidad fitness!</p>
         </section>
+
+        <section class="contactos-section">
+            <div class="container">
+                <h2 class="contactos-title">Contáctanos</h2>
+                <p class="contactos-subtitle">¿Tienes dudas o quieres más información? ¡Escríbenos!</p>
+                
+                <div class="contactos-content">
+                    <div class="contactos-form-container">
+                        <form class="contactos-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico</label>
+                                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono (opcional)</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte..." rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-enviar">
+                                ⚡ Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contactos-info">
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h3>Ubicación</h3>
+                            <p>Av. Principal 123<br>Lima, Perú</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h3>Teléfono</h3>
+                            <p>+51 999 999 999</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>Email</h3>
+                            <p>info@gymsolution.com</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🕒</div>
+                            <h3>Horarios</h3>
+                            <p>Lun - Vie: 6:00 - 22:00<br>Sáb - Dom: 8:00 - 20:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="redes-sociales">
@@ -53,5 +112,7 @@
             <p class="copyright">Copyright © 2025 Gym Solution. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
+    <script src="./js/auth.js"></script>
 </body>
 </html>

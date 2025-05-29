@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario | Gym Solution</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="../index.html" class="logo-small">GYM SOLUTION</a>
+            <button class="login-button" onclick="openLoginModal()">Login</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="about.html">Quiénes Somos</a>
+            <a href="calendar.html">Calendario</a>
+            <a href="store.html">Tienda</a>
+            <a href="philosophy.html">Filosofía</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="calendar-container">
+            <h1 class="calendar-title">Horario de Entrenadores</h1>
+            
+            <div class="calendar-grid">
+                <div class="calendar-day header">Lunes</div>
+                <div class="calendar-day header">Martes</div>
+                <div class="calendar-day header">Miércoles</div>
+                <div class="calendar-day header">Jueves</div>
+                <div class="calendar-day header">Viernes</div>
+                <div class="calendar-day header">Sábado</div>
+
+                <div class="calendar-day">
+                    <div class="trainer-slot morning">
+                        <h3>Juan Pérez</h3>
+                        <p>06:00 - 10:00</p>
+                        <span class="specialty">Musculación</span>
+                        <span class="availability">Cupos: 3/8</span>
+                    </div>
+                    <div class="trainer-slot noon">
+                        <h3>Roberto López</h3>
+                        <p>10:30 - 14:30</p>
+                        <span class="specialty">CrossFit</span>
+                        <span class="availability full">Cupos: 0/12</span>
+                    </div>
+                    <div class="trainer-slot evening">
+                        <h3>María Torres</h3>
+                        <p>15:00 - 19:00</p>
+                        <span class="specialty">Funcional</span>
+                        <span class="availability">Cupos: 5/10</span>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="trainer-slot morning">
+                        <h3>Ana Gómez</h3>
+                        <p>07:00 - 11:00</p>
+                        <span class="specialty">Yoga</span>
+                        <span class="availability">Cupos: 6/15</span>
+                    </div>
+                    <div class="trainer-slot noon special-class">
+                        <h3>Erika Méndez</h3>
+                        <p>11:30 - 15:30</p>
+                        <span class="specialty">Pilates</span>
+                        <span class="class-note">Clase Premium</span>
+                        <span class="availability">Cupos: 2/8</span>
+                    </div>
+                    <div class="trainer-slot evening">
+                        <h3>José Morales</h3>
+                        <p>16:00 - 20:00</p>
+                        <span class="specialty">HIIT</span>
+                        <span class="availability">Cupos: 8/12</span>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="trainer-slot morning">
+                        <h3>Pedro Sánchez</h3>
+                        <p>07:30 - 11:30</p>
+                        <span class="specialty">CrossFit Elite</span>
+                        <span class="availability">Cupos: 4/10</span>
+                    </div>
+                    <div class="trainer-slot noon">
+                        <h3>Lucía Martínez</h3>
+                        <p>12:00 - 16:00</p>
+                        <span class="specialty">Zumba</span>
+                        <span class="availability">Cupos: 12/20</span>
+                    </div>
+                    <div class="trainer-slot night special-class">
+                        <h3>Ricardo Díaz</h3>
+                        <p>18:00 - 22:00</p>
+                        <span class="specialty">Powerlifting</span>
+                        <span class="class-note">Clase Avanzada</span>
+                        <span class="availability">Cupos: 3/6</span>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="trainer-slot morning special-class">
+                        <h3>Carmen Vega</h3>
+                        <p>06:30 - 10:30</p>
+                        <span class="specialty">Yoga Terapéutico</span>
+                        <span class="class-note">Clase Premium</span>
+                        <span class="availability">Cupos: 5/12</span>
+                    </div>
+                    <div class="trainer-slot evening">
+                        <h3>Fernando Torres</h3>
+                        <p>15:00 - 19:00</p>
+                        <span class="specialty">Calistenia</span>
+                        <span class="availability full">Cupos: 0/8</span>
+                    </div>
+                    <div class="trainer-slot night">
+                        <h3>Diana Rojas</h3>
+                        <p>19:30 - 22:30</p>
+                        <span class="specialty">Kickboxing</span>
+                        <span class="availability">Cupos: 6/10</span>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="trainer-slot morning">
+                        <h3>Marcos Pérez</h3>
+                        <p>08:00 - 12:00</p>
+                        <span class="specialty">TRX</span>
+                        <span class="availability">Cupos: 7/10</span>
+                    </div>
+                    <div class="trainer-slot noon special-class">
+                        <h3>Sofía Luna</h3>
+                        <p>12:30 - 16:30</p>
+                        <span class="specialty">Pole Fitness</span>
+                        <span class="class-note">Clase Premium</span>
+                        <span class="availability">Cupos: 4/8</span>
+                    </div>
+                    <div class="trainer-slot evening">
+                        <h3>Gabriel Ríos</h3>
+                        <p>17:00 - 21:00</p>
+                        <span class="specialty">Spinning</span>
+                        <span class="availability">Cupos: 8/15</span>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="trainer-slot morning special-class">
+                        <h3>Valeria Campos</h3>
+                        <p>09:00 - 13:00</p>
+                        <span class="specialty">Boot Camp</span>
+                        <span class="class-note">Clase al aire libre</span>
+                        <span class="availability">Cupos: 15/25</span>
+                    </div>
+                    <div class="trainer-slot noon">
+                        <h3>Alberto Moreno</h3>
+                        <p>13:30 - 17:30</p>
+                        <span class="specialty">Body Combat</span>
+                        <span class="availability">Cupos: 10/15</span>
+                    </div>
+                    <div class="trainer-slot evening special-class">
+                        <h3>Isabel Quintana</h3>
+                        <p>18:00 - 20:00</p>
+                        <span class="specialty">Baile Latino</span>
+                        <span class="class-note">Clase Especial</span>
+                        <span class="availability">Cupos: 9/20</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-grid sunday-container">
+                <h2 class="day-title">Domingo</h2>
+                <div class="day-content">
+                    <div class="trainer-slot special-sunday">
+                        <h3>Horario Flexible</h3>
+                        <p>08:00 - 15:00</p>
+                        <span class="specialty">Entrenamiento Personalizado</span>
+                        <span class="class-note">¡Reserva tu espacio!</span>
+                        <span class="availability">Cupos Limitados</span>
+                    </div>
+                    <span class="sunday-info">Consulta con nuestros entrenadores para programar tu sesión personalizada</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#" class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon youtube">
+                <div class="tooltip">Youtube</div>
+                <span><i class="fab fa-youtube"></i></span>
+            </a>
+        </div>
+        
+        <div class="gym-info">
+            <img src="../assets/iconos/logo.svg" alt="Gym Solution logo" class="footer-logo">
+            <p class="gym-name">Gym Solution</p>
+            <p class="copyright">Copyright © 2025 Gym Solution. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

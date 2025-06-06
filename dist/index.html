@@ -4,49 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Solution</title>
-    <link rel="stylesheet" type="text/css" href="/Proy%20Final%20Prog%20Web.77a9bc14.css">
+    <link rel="stylesheet" type="text/css" href="/Proyecto_Programacion_Web-WithParcel.3092e1e0.css">
+    <link rel="stylesheet" type="text/css" href="/Proyecto_Programacion_Web-WithParcel.9dc2e8f9.css">
+    <link rel="stylesheet" href="/Proyecto_Programacion_Web-WithParcel.7d17c51a.css">
+    <link rel="stylesheet" href="/Proyecto_Programacion_Web-WithParcel.9b77b6d9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <a href="/index.html" class="logo-small">Inicio</a>
-            <div class="match-highlight">Barcelona vs Real Madrid - 26/4, 3pm</div>
-            <button class="login-button">Login</button>
-        </div>
-        
-        <nav class="main-nav">
-            <a href="">Equipo</a>
-            <a href="">Más Equipos</a>
-            <a href="">Tienda</a>
-        </nav>
-    </header>
+        <main>
+            <section class="bienvenida">
+                <h1>¡Bienvenido a <span style="color: var(--morado)">Gym Solution</span>!</h1>
+                <p>Transforma tu cuerpo y mente con nosotros.
+                <br>Tu camino hacia un estilo de vida saludable comienza aquí.
+                </p>
+                <button class="default-button" onclick="openRegisterModal()">
+                    <i class="fas fa-user-plus"></i> Únete Ahora
+                </button>
+            </section>
 
-    <main>
-        <section class="team-photo">
-            <img src="/fotoequipo.55543cd6.png" alt="FC Barcelona equipo completo">
-        </section>
+            <section>
+                <div class="carousel">
+                    <input type="radio" name="carousel" id="slide1" checked="">
+                    <input type="radio" name="carousel" id="slide2">
+                    <input type="radio" name="carousel" id="slide3">
+                    <input type="radio" name="carousel" id="slide4">
+                    <input type="radio" name="carousel" id="slide5">
 
-        <section class="content-box">
-        </section>
-    </main>
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="/entrenador%20.ca43af62.jpeg" alt="Montaña">
+                                <div class="image-info">
+                                    <h3>Entrenadores Capacidatos</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/entrenador%20(1).ade3bb83.jpg" alt="Lago">
+                                <div class="image-info">
+                                    <h3>Siempe disponibles</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/entrenador%20(2).fccb3902.jpg" alt="Bosque">
+                                <div class="image-info">
+                                    <h3>Equipos en buen estado</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/entrenador%20(3).b939ab90.jpg" alt="Playa">
+                                <div class="image-info">
+                                    <h3>Horarios para todos</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/unnamed%20(1).43fa1914.png" alt="Desierto">
 
-    <footer>
-        <div class="social-bar">
-            <p>Sigue al Barça en las redes sociales</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/fcbarcelona/" class="facebook">FCBarcelona</a>
-                <a href="https://www.youtube.com/fcbarcelona/videos" class="youtube">FCBarcelona</a>
-                <a href="https://x.com/FCBarcelona_es" class="twitter">FCBarcelona</a>
-                <a href="https://www.instagram.com/fcbarcelona/" class="instagram">FCBarcelona</a>
-                <a href="https://www.tiktok.com/@fcbarcelona" class="tiktok">FCBarcelona</a>
-            </div>
-        </div>
-        
-        <div class="club-info">
-            <img alt="FC Barcelona logo" class="footer-logo">
-            <p class="club-name">FC BARCELONA</p>
-            <p class="copyright">Copyright FC Barcelona Página Oficial del FC Barcelona</p>
-        </div>
-    </footer>
-<script src="/Proy%20Final%20Prog%20Web.59712999.js"></script></body>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <span class="control-dot"></span>
+                            <span class="control-dot"></span>
+                            <span class="control-dot"></span>
+                            <span class="control-dot"></span>
+                            <span class="control-dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="caracteristicas">
+                <div class="caracteristica">
+                    <i class="fas fa-dumbbell fa-2x" style="color: var(--morado)"></i>
+                    <h2>Equipamiento Moderno</h2>
+                    <p>Contamos con máquinas y pesas de última generación para todos los niveles.</p>
+                </div>
+                <div class="caracteristica">
+                    <i class="fas fa-user-friends fa-2x" style="color: var(--amarillo)"></i>
+                    <h2>Entrenadores Expertos</h2>
+                    <p>Profesionales certificados que te acompañan en cada paso de tu progreso.</p>
+                </div>
+                <div class="caracteristica">
+                    <i class="fas fa-heartbeat fa-2x" style="color: var(--negro)"></i>
+                    <h2>Ambiente Saludable</h2>
+                    <p>Un espacio motivador, seguro y amigable para todos nuestros miembros.</p>
+                </div>
+            </section>
+
+            <section class="gallery-section">
+                <h2 class="gallery-title">Descubre nuestra colección</h2>
+
+                <div class="gallery-container">
+                    <div class="image-set set-1">
+                        <img src="/POLO%204.2dd7b4ac.webp" alt="Artículo 1">
+                        <img src="/POLO%202.e5bd2e99.webp" alt="Artículo 2">
+                        <img src="/SUPLEMENTOS%201.70d8581d.avif" alt="Artículo 3">
+                    </div>
+                    <div class="image-set set-2">
+                        <img src="/POLO%201.3494ec26.webp" alt="Artículo 4">
+                        <img src="/POLO%203.2aa86b15.webp" alt="Artículo 5">
+                        <img src="/SUPLEMENTOS%204.515ef29d.avif" alt="Artículo 6">
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonios" class="testimonios">
+                <h2 style="color: var(--amarillo)">Lo que dicen nuestros miembros</h2>
+                <div class="testimonio">
+                    <div class="testimonio-box">
+                        <p>"El ambiente es increíble y los entrenadores son muy profesionales."</p>
+                        <span>- Juan Pérez</span>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <div class="testimonio-box">
+                        <p>"He alcanzado mis metas gracias a Gym Solution. ¡Gracias!"</p>
+                        <span>- María López</span>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <div class="testimonio-box">
+                        <p>"Las clases grupales son súper motivadoras y divertidas."</p>
+                        <span>- Carlos García</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contactos-section">
+            <div class="container">
+                <h2 class="contactos-title">Contáctanos</h2>
+                <p class="contactos-subtitle">¿Tienes dudas o quieres más información? ¡Escríbenos!</p>
+                
+                <div class="contactos-content">
+                    <div class="contactos-form-container">
+                        <form class="contactos-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico</label>
+                                    <input type="email" id="email" name="email" placeholder="tu@email.com" required="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono (opcional)</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte..." rows="5" required=""></textarea>
+                            </div>
+                            <button type="submit" class="btn-enviar">
+                                ⚡ Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contactos-info">
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h3>Ubicación</h3>
+                            <p>Av. Principal 123<br>Lima, Perú</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h3>Teléfono</h3>
+                            <p>+51 999 999 999</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>Email</h3>
+                            <p>info@gymsolution.com</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🕒</div>
+                            <h3>Horarios</h3>
+                            <p>Lun - Vie: 6:00 - 22:00<br>Sáb - Dom: 8:00 - 20:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div></section>
+        </main>
+
+    <script src="/Proyecto_Programacion_Web-WithParcel.ad25af97.js"></script>
+    <script src="/Proyecto_Programacion_Web-WithParcel.50165830.js"></script>
+    <script src="/Proyecto_Programacion_Web-WithParcel.7afa73b1.js"></script>
+<script src="/Proyecto_Programacion_Web-WithParcel.59712999.js"></script></body>
 </html>

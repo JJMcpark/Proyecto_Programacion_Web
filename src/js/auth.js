@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function() {
+    let modalsPath = 'auth.html';
+    if (!window.location.pathname.endsWith('index.html')) {
+        modalsPath = '../auth.html';
+    }
+    fetch(modalsPath)
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+});
 
 function openRegisterModal() {
     document.getElementById('registerModal').style.display = 'flex';

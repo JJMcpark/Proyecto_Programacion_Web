@@ -1,0 +1,128 @@
+footer {
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0 10px 0;
+}
+.redes-sociales .icon {
+    position: static;
+    background: var(--blanco);
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: var(--negro);
+    text-decoration: none;
+}
+.redes-sociales .icon:hover {
+    color: var(--amarillo);
+    background: var(--negro);
+}
+.redes-sociales .tooltip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    line-height: 1.5;
+    font-size: 14px;
+    background: var(--negro);
+    color: var(--amarillo);
+    padding: 5px 12px;
+    border-radius: 5px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 2;
+}
+.redes-sociales .icon:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}
+.redes-sociales .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: var(--negro);
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+}
+
+.redes-sociales .facebook:hover,
+.redes-sociales .facebook:hover .tooltip,
+.redes_sociales .facebook:hover .tooltip::before {
+    background: #3b5999;
+    color: #fff;
+}
+.redes-sociales .twitter:hover,
+.redes-sociales .twitter:hover .tooltip,
+.redes_sociales .twitter:hover .tooltip::before {
+    background: #46c1f6;
+    color: #fff;
+}
+.redes-sociales .instagram:hover,
+.redes-sociales .instagram:hover .tooltip,
+.redes_sociales .instagram:hover .tooltip::before {
+    background: #e1306c;
+    color: #fff;
+}
+.redes-sociales .youtube:hover,
+.redes-sociales .youtube:hover .tooltip,
+.redes_sociales .youtube:hover .tooltip::before {
+    background: #de463b;
+    color: #fff;
+}
+
+.gym-info {
+    background: var(--gris-oscuro);
+    color: var(--amarillo);
+    text-align: center;
+    padding: 18px 0 12px 0;
+}
+.footer-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+.gym-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: var(--blanco);
+}
+.copyright {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+    .redes-sociales {
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 18px 0 6px 0;
+    }
+    .footer-logo {
+        width: 36px;
+        height: 36px;
+    }
+}

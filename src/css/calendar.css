@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    margin: 0 auto;
+    width: 900px;
+    height: 900px;
+    display: flex;
+    align-items: self-start;
+}
+#body{
+    width:100%;
+    height:300px;
+    background-color: rgb(194, 191, 191);
+    border-radius: 20px;
+}
+#footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+ul{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/* --- SOLO ESTILOS DE CALENDARIO --- */
+
+.calendar-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.calendar-title {
+    text-align: center;
+    color: var(--negro);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid var(--amarillo);
+    padding-bottom: 10px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.day-content span {
+    margin-right: 10px;
+}
+
+.calendar-day {
+    background: var(--gris-fondo);
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 300px;
+}
+
+.calendar-day.header {
+    background: var(--negro);
+    color: var(--amarillo);
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    min-height: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.trainer-slot {
+    background: var(--blanco);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--amarillo);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.trainer-slot:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.trainer-slot h3 {
+    color: var(--negro);
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.trainer-slot p {
+    color: var(--gris-oscuro);
+    margin: 0 0 5px 0;
+    font-size: 0.9rem;
+}
+
+.trainer-slot .specialty {
+    display: inline-block;
+    background: var(--amarillo);
+    color: var(--negro);
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.trainer-slot.morning { border-left-color: #FFD700; }
+.trainer-slot.noon { border-left-color: #FF8C00; }
+.trainer-slot.evening { border-left-color: #4169E1; }
+.trainer-slot.night { border-left-color: #483D8B; }
+
+.trainer-slot.special-class {
+    background: linear-gradient(135deg, var(--blanco) 0%, #fff8e1 100%);
+    border: 2px solid var(--amarillo);
+}
+
+.availability {
+    display: inline-block;
+    background: #e8e8e8;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.availability.full {
+    background: #ff000033;
+    color: #cc0000;
+}
+
+.class-note {
+    display: inline-block;
+    background: var(--amarillo);
+    color: var(--negro);
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.trainer-slot:hover::after {
+    content: attr(data-info);
+    position: absolute;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.sunday-container {
+    grid-template-columns: 1fr;
+    background: linear-gradient(135deg, var(--blanco) 0%, #f8f8f8 100%);
+}
+
+.day-title {
+    color: var(--negro);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.special-sunday {
+    border-left: 4px solid var(--morado);
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.sunday-info {
+    display: block;
+    text-align: center;
+    color: var(--gris-oscuro);
+    font-style: italic;
+    margin-top: 15px;
+}

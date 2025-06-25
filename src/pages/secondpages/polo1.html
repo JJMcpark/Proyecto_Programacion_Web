@@ -4,46 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Proyecto_Programacion_Web-Proyecto/src/css/storepages.css">
+    <link rel="stylesheet" href="/src/css/storepages.css">
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="/src/css/store.css">
     <link rel="stylesheet" href="/src/css/pagesstore/paginas.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <script src="https://kit.fontawesome.com/a18e4f38cd.js" crossorigin="anonymous"></script>
     
     <title>Tienda | Gym Solution</title>
+    <script src="/src/js/auth.js" defer></script>
+    <script src="/src/js/footer.js" defer></script>
+    <script src="/src/js/header.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="top-bar">
-            <a href="/Proyecto_Programacion_Web-Proyecto/src/index.html" class="logo-small">
-                <i class="fas fa-dumbbell"></i> GYM SOLUTION
-            </a>
-            <button class="login-button" onclick="openLoginModal()">Login</button>
-        </div>
-
-        <div id="loginModal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <span class="close" onclick="closeLoginModal()">&times;</span>
-                <h2>Iniciar Sesión</h2>
-                <form action="#" method="POST">
-                    <label for="modal-login-email">Correo Electrónico:</label>
-                    <input type="email" id="modal-login-email" name="email" required>
-                    <label for="modal-login-password">Contraseña:</label>
-                    <input type="password" id="modal-login-password" name="password" required>
-                    <button type="submit">Entrar</button>
-                </form>
-            </div>
-        </div>
-
-        <nav class="main-nav">
-            <a href="/Proyecto_Programacion_Web-Proyecto/src/pages/about.html"><i class="fas fa-users"></i> Quiénes Somos</a>
-            <a href="/Proyecto_Programacion_Web-Proyecto/src/pages/calendar.html"><i class="fas fa-calendar-alt"></i> Calendario</a>
-            <a href="/Proyecto_Programacion_Web-Proyecto/src/pages/store.html"><i class="fas fa-shopping-cart"></i> Tienda</a>
-        </nav>
-    </header>
-
-
-
 
     <main>
         <div class="container-img">
@@ -154,37 +128,6 @@
 
         </div>
     </section>
-
-
-
-    <footer>
-        <div class="redes-sociales">
-            <a href="#" class="icon facebook">
-                <div class="tooltip">Facebook</div>
-                <span><i class="fab fa-facebook-f"></i></span>
-            </a>
-            <a href="#" class="icon twitter">
-                <div class="tooltip">Twitter</div>
-                <span><i class="fab fa-twitter"></i></span>
-            </a>
-            <a href="#" class="icon instagram">
-                <div class="tooltip">Instagram</div>
-                <span><i class="fab fa-instagram"></i></span>
-            </a>
-            <a href="#" class="icon youtube">
-                <div class="tooltip">Youtube</div>
-                <span><i class="fab fa-youtube"></i></span>
-            </a>
-        </div>
-
-        <div class="gym-info">
-            <img src="/src/assets/iconos/logo.svg" alt="Gym Solution logo" class="footer-logo">
-            <p class="gym-name">Gym Solution</p>
-            <p class="copyright">Copyright © 2025 Gym Solution. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="../js/auth.js"></script>
 </body>
 
 </html>

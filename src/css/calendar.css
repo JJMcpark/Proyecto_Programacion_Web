@@ -24,6 +24,8 @@ ul{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+/* --- SOLO ESTILOS DE CALENDARIO --- */
+
 .calendar-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -43,7 +45,7 @@ ul{
 
 .calendar-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Cambiado de 7 a 6 columnas */
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     background: var(--blanco);
     padding: 20px;

@@ -4,27 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Solution</title>
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <link rel="stylesheet" type="text/css" href="./css/auth.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/index-carrusel.css">
+    <link rel="stylesheet" type="text/css" href="/src/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/src/css/auth.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/index-carrusel.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+    <!--agregando funcionalidad de js para scripts con atributo defer-->
+    <script src="/src/js/auth.js" defer></script>
+    <script src="/src/js/footer.js" defer></script>
+    <script src="/src/js/header.js" defer></script>
+
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <a href="index.html" class="logo-small">
-                <i class="fas fa-dumbbell"></i> GYM SOLUTION
-            </a>
-            <button class="login-button" onclick="openLoginModal()">Login</button>
-        </div>
-        <nav class="main-nav">
-            <a href="./pages/about.html"><i class="fas fa-users"></i> Quiénes Somos</a>
-            <a href="./pages/calendar.html"><i class="fas fa-calendar-alt"></i> Calendario</a>
-            <a href="./pages/store.html"><i class="fas fa-shopping-cart"></i> Tienda</a>
-        </nav>
-    </header>
-
         <main>
             <section class="bienvenida">
                 <h1>¡Bienvenido a <span style="color:var(--morado)">Gym Solution</span>!</h1>
@@ -45,31 +37,31 @@
                 <div class="carousel-container">
                     <div class="carousel-track">
                         <div class="carousel-slide">
-                            <img src="./assets/images/entrenador .jpeg" alt="Montaña">
+                            <img src="/src/assets/images/entrenador .jpeg" alt="Montaña">
                             <div class="image-info">
                                 <h3>Entrenadores Capacidatos</h3>
                             </div>
                         </div>
                         <div class="carousel-slide">
-                            <img src="./assets/images/entrenador (1).jpg" alt="Lago">
+                            <img src="/src/assets/images/entrenador (1).jpg" alt="Lago">
                             <div class="image-info">
                                 <h3>Siempe disponibles</h3>
                             </div>
                         </div>
                         <div class="carousel-slide">
-                            <img src="./assets/images/entrenador (2).jpg" alt="Bosque">
+                            <img src="/src/assets/images/entrenador (2).jpg" alt="Bosque">
                             <div class="image-info">
                                 <h3>Equipos en buen estado</h3>
                             </div>
                         </div>
                         <div class="carousel-slide">
-                            <img src="./assets/images/entrenador (3).jpg" alt="Playa">
+                            <img src="/src/assets/images/entrenador (3).jpg" alt="Playa">
                             <div class="image-info">
                                 <h3>Horarios para todos</h3>
                             </div>
                         </div>
                         <div class="carousel-slide">
-                            <img src="./assets/images/unnamed (1).png" alt="Desierto">
+                            <img src="/src/assets/images/unnamed (1).png" alt="Desierto">
 
                         </div>
                     </div>
@@ -107,14 +99,14 @@
 
                 <div class="gallery-container">
                     <div class="image-set set-1">
-                        <img src="./assets/images/ROPA/POLO 4.webp" alt="Artículo 1">
-                        <img src="./assets/images/ROPA/POLO 2.webp" alt="Artículo 2">
-                        <img src="./assets/images/SUPLEMENTOS/SUPLEMENTOS 1.avif" alt="Artículo 3">
+                        <img src="/src/assets/images/ROPA/POLO 4.webp" alt="Artículo 1">
+                        <img src="/src/assets/images/ROPA/POLO 2.webp" alt="Artículo 2">
+                        <img src="/src/assets/images/SUPLEMENTOS/SUPLEMENTOS 1.avif" alt="Artículo 3">
                     </div>
                     <div class="image-set set-2">
-                        <img src="./assets/images/ROPA/POLO 1.webp" alt="Artículo 4">
-                        <img src="./assets/images/ROPA/POLO 3.webp" alt="Artículo 5">
-                        <img src="./assets/images/SUPLEMENTOS/SUPLEMENTOS 4.avif" alt="Artículo 6">
+                        <img src="/src/assets/images/ROPA/POLO 1.webp" alt="Artículo 4">
+                        <img src="/src/assets/images/ROPA/POLO 3.webp" alt="Artículo 5">
+                        <img src="/src/assets/images/SUPLEMENTOS/SUPLEMENTOS 4.avif" alt="Artículo 6">
                     </div>
                 </div>
             </section>
@@ -198,9 +190,6 @@
                 </div>
             </div>
         </section>
-        </main>
-
-    <script src="./js/auth.js"></script>
-    <script src="./js/footer.js"></script>
+    </main>
 </body>
 </html>

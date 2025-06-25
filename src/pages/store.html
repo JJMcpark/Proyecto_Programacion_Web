@@ -3,43 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/store.css">
-    <link rel="stylesheet" href="../css/auth.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="/src/css/store.css">
+    <link rel="stylesheet" href="/src/css/auth.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <script src="https://kit.fontawesome.com/a18e4f38cd.js" crossorigin="anonymous"></script>
     <title>Tienda | Gym Solution</title>
+
+    <script src="/src/js/auth.js" defer></script>
+    <script src="/src/js/footer.js" defer></script>
+    <script src="/src/js/header.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="top-bar">
-            <a href="../index.html" class="logo-small">
-                <i class="fas fa-dumbbell"></i> GYM SOLUTION
-            </a>
-            <button class="login-button" onclick="openLoginModal()">Login</button>
-        </div>
-
-        <div id="loginModal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <span class="close" onclick="closeLoginModal()">&times;</span>
-                <h2>Iniciar Sesión</h2>
-                <form action="#" method="POST">
-                    <label for="modal-login-email">Correo Electrónico:</label>
-                    <input type="email" id="modal-login-email" name="email" required>
-                    <label for="modal-login-password">Contraseña:</label>
-                    <input type="password" id="modal-login-password" name="password" required>
-                    <button type="submit">Entrar</button>
-                </form>
-            </div>
-        </div>
-
-        <nav class="main-nav">
-            <a href="about.html"><i class="fas fa-users"></i> Quiénes Somos</a>
-            <a href="calendar.html"><i class="fas fa-calendar-alt"></i> Calendario</a>
-            <a href="store.html"><i class="fas fa-shopping-cart"></i> Tienda</a>
-        </nav> 
-    </header>
 
     <main>
 
@@ -50,9 +27,9 @@
                         <ul id="menu">
                             <div class="cuadro">
                                 <li><a href="#">TODOS LOS PRODUCTOS</a></li>
-                                <li><a href="./storepages/camisetas.html">CAMISETAS</a></li>
-                                <li><a href="./storepages/suplementos.html">SUPLEMENTOS</a></li>
-                                <li><a href="./storepages/materiales.html">MATERIALES</a></li>
+                                <li><a href="/src/pages/storepages/camisetas.html">CAMISETAS</a></li>
+                                <li><a href="/src/pages/storepages/suplementos.html">SUPLEMENTOS</a></li>
+                                <li><a href="/src/pages/storepages/materiales.html">MATERIALES</a></li>
                             </div>
                         </ul>
                     </div>
@@ -80,7 +57,7 @@
 
                             <div class="card">
                                 <a href="/src/pages/secondpages/polo1.html" class=" product-box">
-                                    <img alt="Camisa con calavera" src="../assets/images/ROPA/POLO 1.webp" width="100%">
+                                    <img alt="Camisa con calavera" src="/src/assets/images/ROPA/POLO 1.webp" width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Camisa con calavera</h3>
                                     <strong class="price">$70.00</strong>
@@ -89,18 +66,18 @@
                             </div>
                             <div class="card">
                                 <a href="#" class=" product-box">
-                                    <img alt="Camisa sin mangas gris" src="../assets/images/ROPA/POLO 2.webp"
+                                    <img alt="Camisa sin mangas gris" src="/src/assets/images/ROPA/POLO 2.webp"
                                         width="100%">
                                     <div class="offer">OFERTA</div>
                                     <h3>Camisa sin mangas gris</h3>
-                                    <strong class="price"><del>$50.00</del> $70.00</strong>
+                                    <strong class="price"><del>$99.90</del> $69.90</strong>
                                     <button class="boton-carrito">Añadir al carrito</button>
                                 </a>
                             </div>
 
                             <div class="card">
                                 <a href="#" class=" product-box">
-                                    <img alt="Camisa deportiva negra" src="../assets/images/ROPA/POLO 3.webp"
+                                    <img alt="Camisa deportiva negra" src="/src/assets/images/ROPA/POLO 3.webp"
                                         width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Camisa deportiva negra</h3>
@@ -111,7 +88,7 @@
 
                             <div class="card">
                                 <a href="#" class=" product-box">
-                                    <img alt="Camisa deportiva negra" src="../assets/images/ROPA/POLO 4.webp"
+                                    <img alt="Camisa deportiva negra" src="/src/assets/images/ROPA/POLO 4.webp"
                                         width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Camisa deportiva gris</h3>
@@ -122,7 +99,7 @@
 
                             <div class="card">
                                 <a href="#" class=" product-box">
-                                    <img alt="Impact Creatine" src="../assets/images/SUPLEMENTOS/SUPLEMENTOS 1.avif"
+                                    <img alt="Impact Creatine" src="/src/assets/images/SUPLEMENTOS/SUPLEMENTOS 1.avif"
                                         width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Impact Creatine</h3>
@@ -134,7 +111,7 @@
                             <div class="card">
                                 <a href="#" class=" product-box">
                                     <img alt="Impact Vegan Protein"
-                                        src="../assets/images/SUPLEMENTOS/SUPLEMENTOS 2.avif" width="100%">
+                                        src="/src/assets/images/SUPLEMENTOS/SUPLEMENTOS 2.avif" width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Impact Vegan Protein</h3>
                                     <strong class="price">$70.00</strong>
@@ -144,7 +121,7 @@
 
                             <div class="card">
                                 <a href="#" class="product-box">
-                                    <img alt="Impact Whey Isolate" src="../assets/images/SUPLEMENTOS/SUPLEMENTOS 3.avif"
+                                    <img alt="Impact Whey Isolate" src="/src/assets/images/SUPLEMENTOS/SUPLEMENTOS 3.avif"
                                         width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Impact Whey Isolate</h3>
@@ -156,7 +133,7 @@
                             <div class="card">
                                 <a href="#" class="product-box">
                                     <img alt="Essential Whey Protein"
-                                        src="../assets/images/SUPLEMENTOS/SUPLEMENTOS 4.avif" width="100%">
+                                        src="/src/assets/images/SUPLEMENTOS/SUPLEMENTOS 4.avif" width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Essential Whey Protein</h3>
                                     <strong class="price">$70.00</strong>
@@ -167,7 +144,7 @@
                             <div class="card">
                                 <a href="#" class=" product-box">
                                     <img alt="Proteína sabor vainilla"
-                                        src="../assets/images/SUPLEMENTOS/SUPLEMENTOS 5.avif" width="100%">
+                                        src="/src/assets/images/SUPLEMENTOS/SUPLEMENTOS 5.avif" width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Proteína sabor vainilla</h3>
                                     <strong class="price">$70.00</strong>
@@ -177,7 +154,7 @@
 
                             <div class="card">
                                 <a href="#" class=" product-box">
-                                    <img alt="Alfombra de goma" src="../assets/images/MATERIALES/ALFOMBRA DE GOMA.webp"
+                                    <img alt="Alfombra de goma" src="/src/assets/images/MATERIALES/ALFOMBRA DE GOMA.webp"
                                         width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Alfombra de goma</h3>
@@ -188,7 +165,7 @@
 
                             <div class="card">
                                 <a href="#" class=" product-box">
-                                    <img alt="Cinturón lumbar" src="../assets/images/MATERIALES/CINTURON.webp"
+                                    <img alt="Cinturón lumbar" src="/src/assets/images/MATERIALES/CINTURON.webp"
                                         width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Cinturón lumbar</h3>
@@ -200,7 +177,7 @@
                             <div class="card">
                                 <a href="#" class=" product-box">
                                     <img alt="Mancuernas ajustables"
-                                        src="../assets/images/MATERIALES/MANCUERNAS AJUSTABLES.webp" width="100%">
+                                        src="/src/assets/images/MATERIALES/MANCUERNAS AJUSTABLES.webp" width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Mancuernas ajustables</h3>
                                     <strong class="price">$70.00</strong>
@@ -210,7 +187,7 @@
 
                             <div class="card">
                                 <a href="#" class=" product-box">
-                                    <img alt="Muñequeras deportivas" src="../assets/images/MATERIALES/MUÑEQUERAS.webp"
+                                    <img alt="Muñequeras deportivas" src="/src/assets/images/MATERIALES/MUÑEQUERAS.webp"
                                         width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Muñequeras deportivas</h3>
@@ -221,7 +198,7 @@
 
                             <div class="card">
                                 <a href="#" class="product-box">
-                                    <img alt="Pelota de yoga" src="../assets/images/MATERIALES/PELOTA DE YOGA.webp"
+                                    <img alt="Pelota de yoga" src="/src/assets/images/MATERIALES/PELOTA DE YOGA.webp"
                                         width="100%">
                                     <div class="offer hidden">OFERTA</div>
                                     <h3>Pelota de yoga</h3>
@@ -243,7 +220,5 @@
         </div>
 
     </main>
-    <script src="../js/auth.js"></script>
-    <script src="../js/footer.js"></script>
 </body>
 </html>

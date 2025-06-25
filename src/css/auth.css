@@ -14,6 +14,8 @@
     border: 1px solid var(--amarillo);
 }
 
+/* --- SOLO ESTILOS DE AUTENTICACIÓN --- */
+
 .modal {
     position: fixed;
     top: 0;
@@ -26,7 +28,6 @@
     align-items: center;
     z-index: 1000;
 }
-
 .modal-content {
     background: linear-gradient(135deg, #FFD600 60%, #222 100%);
     color: #222;
@@ -36,7 +37,6 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     position: relative;
 }
-
 .modal-content .close {
     position: absolute;
     top: 10px;
@@ -45,24 +45,20 @@
     cursor: pointer;
     color: #222;
 }
-
 .modal-content form {
     display: flex;
     flex-direction: column;
 }
-
 .modal-content label {
     margin-bottom: 5px;
     color: #222;
 }
-
 .modal-content input {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 .modal-content button {
     padding: 10px;
     background-color: #222;
@@ -71,25 +67,22 @@
     border-radius: 4px;
     cursor: pointer;
 }
-
 .modal-content button:hover {
     background-color: #FFD600;
     color: #222;
 }
 
-/* Estilos para la sección de autenticación */
+/* Sección de autenticación */
 .auth-section {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
 }
-
 .auth-container {
     display: flex;
     gap: 50px;
 }
-
 .register-box, .login-box {
     border: 1px solid #ccc;
     padding: 20px;
@@ -99,29 +92,24 @@
     background: linear-gradient(135deg, #FFD600 60%, #222 100%);
     color: #222;
 }
-
 .register-box h2, .login-box h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .register-box form, .login-box form {
     display: flex;
     flex-direction: column;
 }
-
 .register-box label, .login-box label {
     margin-bottom: 5px;
     color: #222;
 }
-
 .register-box input, .login-box input {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 .register-box button, .login-box button {
     padding: 10px;
     background-color: #222;
@@ -130,7 +118,6 @@
     border-radius: 4px;
     cursor: pointer;
 }
-
 .register-box button:hover, .login-box button:hover {
     background-color: #FFD600;
     color: #222;

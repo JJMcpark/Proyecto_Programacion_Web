@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let modalsPath = 'auth.html';
-    if (!window.location.pathname.endsWith('index.html')) {
-        modalsPath = '../auth.html';
-    }
+    let modalsPath = '/src/auth.html';
     fetch(modalsPath)
         .then(response => response.text())
         .then(data => {

@@ -358,15 +358,14 @@ padding: 30px;
 }
 
 /* lo nuevo*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
 
 
 img{
-    max-width: 100%;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
 }
 .container-title{
     padding: 30px;
@@ -377,18 +376,21 @@ img{
 }
 main{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     margin-bottom: 80px;
+    padding: 0 100px; 
+    
 }
 .container-img{
     flex: 1;
-    padding: 5px;
+
 }
 
 .container-info-product{
     flex: 1;
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -507,5 +509,29 @@ main{
 }
 
 .hidden{
-    
+    display: none;
 }
+.container-description,
+.container-addictional-information{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #232323;
+    padding: 10px 0;
+}
+
+.title-description,
+.title-addictional-information{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.text-description,
+.text-addictional-information{
+    font-size: 13px;
+    color: #232323;
+    line-height: 22px;
+    margin-top: 25px;
+} 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/src/css/pagesstore/paginas.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <script src="https://kit.fontawesome.com/a18e4f38cd.js" crossorigin="anonymous"></script>
+    
     <title>Tienda | Gym Solution</title>
 </head>
 
@@ -46,7 +47,7 @@
 
     <main>
         <div class="container-img">
-            <img src="/Proyecto_Programacion_Web-Proyecto/src/assets/images/ROPA/POLO 1.webp" alt="imagen-producto">
+            <img src="/src/assets/images/ROPA/POLO 1.webp" alt="imagen-producto">
         </div>
         <div class="container-info-product">
             <div class="container-price">
@@ -75,14 +76,84 @@
 
                 <div class="container-add-cart">
                     <div class="container-quantity">
-                        <input type="number" name="" id=""  placeholder="1" value="1" min="1" max="10" >
+                        <input type="number"  placeholder="1" value="1" min="1" class="input-quantity">
+                        <div class="btn-increment-decrement">
+                            <i class="fa-solid fa-chevron-up"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <button class="btn-add-to-cart">
+                        <i class="fa-solid fa-plus"></i>
+                        Añadir al carrito
+                    </button>
+                </div>
+                <div class="container-description">
+                    <div class="title-description">
+                        <h3>Descripcion</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-description">
+                        <h4>Material:</h4>
+                        <p> 72% Poliamida, 21% Poliéster, 7% Elastano.</p>
+                        <h4>Peso de la tela:</h4>
+                        <p> GSM 310</p>
+                        <h4>Ajuste:</h4>
+                        <p> Super Equipado.</p>
+                        <h4>Diseño:</h4>
+                        <p> El Warrior Compression Tee está diseñado para el rendimiento y el estilo, elaborado con el mismo ajuste y tela premium que nuestros Super Villain Tees más vendidos. Con un llamativo patrón tribal en los hombros y un audaz logotipo de alta densidad en el pecho, esta camiseta ofrece un aspecto elegante y atlético. El patrón en la camiseta de compresión está diseñado para acentuar los hombros y crear una cintura de aspecto más delgado, mejorando ese físico en forma de V.</p>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </main>
 
+    <section class="container-related-products">
+        <h2>Tambíen te puede interesar</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <a href="/src/pages/secondpages/polo1.html" class=" product-box">
+                    <img alt="Camisa con calavera" src="/src/assets/images/ROPA/POLO 2.webp" width="100%">
+                    <div class="offer hidden">OFERTA</div>
+                    <h3>Camisa con calavera</h3>
+                    <strong class="price">$70.00</strong>
+                    <button class="boton-carrito">Añadir al carrito</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="/src/pages/secondpages/polo1.html" class=" product-box">
+                    <img alt="Camisa con calavera" src="/src/assets/images/ROPA/POLO 3.webp" width="100%">
+                    <div class="offer hidden">OFERTA</div>
+                    <h3>Camisa con calavera</h3>
+                    <strong class="price">$70.00</strong>
+                    <button class="boton-carrito">Añadir al carrito</button>
+                </a>
+            </div>         
+
+            <div class="card">
+                <a href="/src/pages/secondpages/polo1.html" class=" product-box">
+                    <img alt="Camisa con calavera" src="/src/assets/images/ROPA/POLO 4.webp" width="100%">
+                    <div class="offer hidden">OFERTA</div>
+                    <h3>Camisa con calavera</h3>
+                    <strong class="price">$70.00</strong>
+                    <button class="boton-carrito">Añadir al carrito</button>
+                </a>
+            </div>       
+                 
+            <div class="card">
+                <a href="/src/pages/secondpages/polo1.html" class=" product-box">
+                    <img alt="Camisa con calavera" src="/src/assets/images/SUPLEMENTOS/SUPLEMENTOS 1.avif" width="100%">
+                    <div class="offer hidden">OFERTA</div>
+                    <h3>Camisa con calavera</h3>
+                    <strong class="price">$70.00</strong>
+                    <button class="boton-carrito">Añadir al carrito</button>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
 
 
 

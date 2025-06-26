@@ -450,7 +450,6 @@ padding: 30px;
 /*CUADROS DE EL CONTAINER */
 .cuadro{
     background-color: transparent;
-    border: 2px solid var(--amarillo);
     border-radius: 50px;
     padding: 17px;
     width: 100%;
@@ -560,6 +559,6 @@ padding: 30px;
     transition: background 0.2s, color 0.2s;
 }
 .boton-carrito:hover {
-    background-color: #fff1c2;
+    background-color: #ffd600;
     color: var(--negro);
 }

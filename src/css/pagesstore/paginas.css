@@ -305,7 +305,7 @@ padding: 30px;
 
 /* Tarjeta individual de producto */
 .card {
-    width: 250px;
+    width: 320px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -314,12 +314,13 @@ padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 /* Imagen del producto */
 .card img {
     width: 100%; 
-    height: 250px;
+    height: 300px;
     object-fit: contain;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -352,7 +353,7 @@ padding: 30px;
 
 
 .boton-carrito:hover{
-    background-color:#fff1c2;
+    background-color:#ffd600;
     color: var(--negro);
     
 }
@@ -361,24 +362,28 @@ padding: 30px;
 
 
 img{
-    max-width: 80%;
-    width: 100%;
+    max-width: 470px;
+    
     height: auto;
     border-radius: 8px;
 
 }
 .container-title{
     padding: 30px;
-    background-color: #eee;
+    background-color: #232323;
     margin-bottom:50px ;
-    color: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    border-top: 2px solid var(--amarillo);
 
 }
 main{
     display: flex;
-    gap: 20px;
+    gap: 5px;
     margin-bottom: 80px;
-    padding: 0 100px; 
+    padding: 0 200px; 
     
 }
 .container-img{
@@ -512,7 +517,7 @@ main{
     display: none;
 }
 .container-description,
-.container-addictional-information{
+.container-additional-information{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #232323;
@@ -520,7 +525,7 @@ main{
 }
 
 .title-description,
-.title-addictional-information{
+.title-additional-information{
     display: flex;
     align-items:center ;
     justify-content: space-between;
@@ -529,9 +534,149 @@ main{
 
 
 .text-description,
-.text-addictional-information{
+.text-additional-information{
     font-size: 13px;
     color: #232323;
     line-height: 22px;
     margin-top: 25px;
 } 
+
+
+
+
+.container-related-products h2{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.card-list-products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 110px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .container-img,
+    .container-info-product {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .container-add-cart {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .form-group select {
+        width: 100%;
+    }
+
+    .container-description,
+    .container-additional-information {
+        padding: 15px 0;
+    }
+
+    .text-description,
+    .text-additional-information {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .title-description,
+    .title-additional-information {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+    .input-quantity {
+        width: 100%;
+    }
+
+    .btn-increment-decrement {
+        position: relative;
+        flex-direction: row;
+        top: auto;
+        right: auto;
+        justify-content: flex-end;
+        margin-top: 5px;
+        gap: 8px;
+    }
+
+    .btn-increment-decrement i {
+        font-size: 14px;
+    }
+
+    .card-list-products {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;   
+        min-height: 360px;
+    }
+
+    .card img {
+        height: 250px;
+        max-height: 200px;
+        width: 100%;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .card-list-products {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 12px;
+        padding: 20px;
+        justify-items: center;
+        align-items: stretch;
+    }
+
+    .product-box {
+        padding: 15px;
+    }
+
+    .container-img {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    .container-img img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+}
+

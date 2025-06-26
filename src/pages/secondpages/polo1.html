@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Proyecto_Programacion_Web-Proyecto/src/css/storepages.css">
     <link rel="stylesheet" href="/src/css/pagesstore/paginas.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <script src="https://kit.fontawesome.com/a18e4f38cd.js" crossorigin="anonymous"></script>
@@ -76,10 +75,15 @@
 
                 <div class="container-add-cart">
                     <div class="container-quantity">
-                        <input type="number"  placeholder="1" value="1" min="1" class="input-quantity">
+                        <input type="number"  
+                        placeholder="1" 
+                        value="1" 
+                        min="1" 
+                        class="input-quantity"
+                        />
                         <div class="btn-increment-decrement">
-                            <i class="fa-solid fa-chevron-up"></i>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up" id="increment"></i>
+                            <i class="fa-solid fa-chevron-down" id="decrement"></i>
                         </div>
                     </div>
                     <button class="btn-add-to-cart">
@@ -92,7 +96,7 @@
                         <h3>Descripcion</h3>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div class="text-description">
+                    <div class="text-description hidden">
                         <p>El Warrior Compression Tee está diseñado para el rendimiento y el estilo, elaborado con el mismo ajuste 
                             y tela premium que nuestros Super Villain Tees más vendidos. Con un llamativo patrón tribal en los hombros 
                             y un audaz logotipo de alta densidad en el pecho, esta camiseta ofrece un aspecto elegante y atlético. 
@@ -102,12 +106,12 @@
 
                 </div>
             </div>
-            <div class="container-addictional-information">
-                <div class="title-addictional-information">
+            <div class="container-additional-information">
+                <div class="title-additional-information">
                     <h4>Diseño:</h4>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
-                <div class="text-addictional-information">
+                <div class="text-additional-information hidden">
                     <p>-----------</p>
                 </div>
             </div>
@@ -192,7 +196,8 @@
     </footer>
 
     <script src="/src/js/auth.js"></script>
-    
+    <script src="https://kit.fontawesome.com/a18e4f38cd.js" crossorigin="anonymous"></script>
+    <script src="/src/js/aditional.js"></script>
 </body>
 
 </html>

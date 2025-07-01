@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/src/css/index.css">
     <link rel="stylesheet" href="/src/css/store.css">
     <link rel="stylesheet" href="/src/css/auth.css">
@@ -14,6 +17,7 @@
     <script src="/src/js/auth.js" defer></script>
     <script src="/src/js/footer.js" defer></script>
     <script src="/src/js/header.js" defer></script>
+    <script src="/src/js/carrito.js" async ></script>
 </head>
 
 <body>
@@ -35,7 +39,7 @@
                     </div>
                 </div>
 
-                <div class="col-9">
+                <div class="col-7">
 
                     <div class="row">
                         <form class="search-container">
@@ -210,12 +214,70 @@
                         </div>
 
 
+
                         <ul class="pagination">
                             <li><a href="#">1</a></li>
 
                         </ul>
                     </div>
                 </div>
+
+                <div class="col-2">
+
+                    <div class="carrito">
+
+                        <div class="header-carrito">
+                            <h2>Tu Carrito</h2>
+                        </div>
+
+                        <div class="carrito-item">
+                            <img src="/src/assets/images/ROPA/POLO 1.webp" alt="" width="80px" >
+                            <div class="carrito-item-detalles">
+                                <span class="carrito-item-titulo">Box Engasse</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                                </div>
+                                <span class="carrito-item-precio">$70.00</span>
+                            </div>
+                            <span class="btn-eliminar">
+                                <i class="fa-solid fa-trash"></i>
+                            </span>
+                        </div>
+
+
+                        <div class="carrito-item">
+                            <img src="/src/assets/images/ROPA/POLO 2.webp" alt="" width="80px" >
+                            <div class="carrito-item-detalles">
+                                <span class="carrito-item-titulo">Box Engasse 2</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                    <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                                </div>
+                                <span class="carrito-item-precio">$69.90</span>
+                            </div>
+                            <span class="btn-eliminar">
+                                <i class="fa-solid fa-trash"></i>
+                            </span>
+                        </div>
+
+                        <div class="carrito-total">
+                            <div class="fila">
+                                <strong>Tu Total</strong>
+                                <span class="carrito-precio-total">
+                                    $139.90
+                                </span>
+                            </div>
+                            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
             </div>
         </div>
 

@@ -588,7 +588,7 @@ padding: 30px;
     position: sticky !important;
     top: 0;
     transition: .3s;
-
+    padding: auto;
 }
 
 .carrito .header-carrito{

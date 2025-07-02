@@ -16,17 +16,15 @@ function ready(){
 }
 
 
-function EliminarItemCarrito(event){
+function EliminarItemCarrito(event) {
     var buttonClicked = event.target;
-    buttonClicked.parentElement.remove();
+    var item = buttonClicked.closest('.carrito-item'); // selecciona el contenedor completo
+    item.remove();
 
     actualizarTotalCarrito();
-
-
-
-
-
+    ocultarCarrito();
 }
+
 
 function actualizarTotalCarrito(){
     var carritoContenedor = document.getElementsByClassName('carrito')[0];
@@ -53,6 +51,13 @@ function actualizarTotalCarrito(){
 
 }
 
+function ocultarCarrito(){
+    var carrito = document.getElementsByClassName('carrito')[0];
+    var carritoItems = carrito.getElementsByClassName('carrito-item');
 
+    if (carritoItems.length === 0) {
+        carrito.style.display = 'none'; // Oculta todo el carrito
+        carritovisible = false;
+    }
 
-
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/pagesstore/paginas.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <script src="https://kit.fontawesome.com/a18e4f38cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/auth.css">
+    
+    <title>Tienda | Gym Solution</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="/src/index.html" class="logo-small">
+                <i class="fas fa-dumbbell"></i> GYM SOLUTION
+            </a>
+            <button class="login-button" onclick="openLoginModal()">Login</button>
+        </div>
+
+        <div id="loginModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+                <h2>Iniciar Sesión</h2>
+                <form action="#" method="POST">
+                    <label for="modal-login-email">Correo Electrónico:</label>
+                    <input type="email" id="modal-login-email" name="email" required>
+                    <label for="modal-login-password">Contraseña:</label>
+                    <input type="password" id="modal-login-password" name="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="/src/pages/about.html"><i class="fas fa-users"></i> Quiénes Somos</a>
+            <a href="/src/pages/calendar.html"><i class="fas fa-calendar-alt"></i> Calendario</a>
+            <a href="/src/pages/store.html"><i class="fas fa-shopping-cart"></i> Tienda</a>
+        </nav>
+    </header>
+
+
+    <div class="container-title">CAMISETAS</div>
+
+    <main>
+        <div class="container-img">
+            <img src="/src/assets/images/ROPA/POLO 2.webp" alt="imagen-producto">
+        </div>
+        <div class="container-info-product">
+            <div class="container-price">
+                <h4 class="title-principal">CAMIDA DE CALAVERA</h4>
+                <span>$90.00</span>
+            </div>
+            <div class="container-datails-products">
+                <div class="form-group">
+                    <label for="colour">Color</label>
+                    <select name="colour" id="colour">
+                        <option disabled selected   value=""> Escoge una opcion</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="size">Talla</label>
+                    <select name="size" id="size">
+                        <option disabled selected   value=""> Escoge una opcion</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+
+                <div class="container-add-cart">
+                    <div class="container-quantity">
+                        <input type="number"  
+                        placeholder="1" 
+                        value="1" 
+                        min="1"
+                        class="input-quantity"
+                        />
+                        <div class="btn-increment-decrement">
+                            <i class="fa-solid fa-chevron-up" id="increment"></i>
+                            <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                        </div>
+                    </div>
+                    <button class="btn-add-to-cart">
+                        <i class="fa-solid fa-plus"></i>
+                        Añadir al carrito
+                    </button>
+                </div>
+                <div class="container-description">
+                    <div class="title-description">
+                        <h3>Descripcion</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-description hidden">
+                        <p>El Warrior Compression Tee está diseñado para el rendimiento y el estilo, elaborado con el mismo ajuste 
+                            y tela premium que nuestros Super Villain Tees más vendidos. Con un llamativo patrón tribal en los hombros 
+                            y un audaz logotipo de alta densidad en el pecho, esta camiseta ofrece un aspecto elegante y atlético. 
+                            El patrón en la camiseta de compresión está diseñado 
+                            para acentuar los hombros y crear una cintura de aspecto más delgado, mejorando ese físico en forma de V.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-additional-information">
+                <div class="title-additional-information">
+                    <h4>Diseño:</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-additional-information hidden">
+                    <p>-----------</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="container-related-products">
+        <h2>Tambíen te puede interesar</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <a href="/src/pages/secondpages/polo1.html" class=" product-box">
+                    <img alt="Camisa con calavera" src="/src/assets/images/ROPA/POLO 2.webp" width="100%">
+                    <div class="offer hidden">OFERTA</div>
+                    <h3>Camisa con calavera</h3>
+                    <strong class="price">$70.00</strong>
+                    <button class="boton-carrito">Añadir al carrito</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="/src/pages/secondpages/polo1.html" class=" product-box">
+                    <img alt="Camisa con calavera" src="/src/assets/images/ROPA/POLO 3.webp" width="100%">
+                    <div class="offer hidden">OFERTA</div>
+                    <h3>Camisa con calavera</h3>
+                    <strong class="price">$70.00</strong>
+                    <button class="boton-carrito">Añadir al carrito</button>
+                </a>
+            </div>         
+
+            <div class="card">
+                <a href="/src/pages/secondpages/polo1.html" class=" product-box">
+                    <img alt="Camisa con calavera" src="/src/assets/images/ROPA/POLO 4.webp" width="100%">
+                    <div class="offer hidden">OFERTA</div>
+                    <h3>Camisa con calavera</h3>
+                    <strong class="price">$70.00</strong>
+                    <button class="boton-carrito">Añadir al carrito</button>
+                </a>
+            </div>       
+                 
+            <div class="card">
+                <a href="/src/pages/secondpages/polo1.html" class=" product-box">
+                    <img alt="Camisa con calavera" src="/src/assets/images/SUPLEMENTOS/SUPLEMENTOS 1.avif" width="100%">
+                    <div class="offer hidden">OFERTA</div>
+                    <h3>Camisa con calavera</h3>
+                    <strong class="price">$70.00</strong>
+                    <button class="boton-carrito">Añadir al carrito</button>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#" class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon youtube">
+                <div class="tooltip">Youtube</div>
+                <span><i class="fab fa-youtube"></i></span>
+            </a>
+        </div>
+
+        <div class="gym-info">
+            <img src="/src/assets/iconos/logo.svg" alt="Gym Solution logo" class="footer-logo">
+            <p class="gym-name">Gym Solution</p>
+            <p class="copyright">Copyright © 2025 Gym Solution. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/src/js/auth.js"></script>
+    <script src="https://kit.fontawesome.com/a18e4f38cd.js" crossorigin="anonymous"></script>
+    <script src="/src/js/aditional.js"></script>
+    <script src="/src/js/footer.js"></script>
+</body>
+
+</html>

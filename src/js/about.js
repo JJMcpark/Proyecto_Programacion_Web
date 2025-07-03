@@ -10,10 +10,7 @@ class AboutPage {
     }
 
     setupAnimations() {
-        // Animación de aparición gradual para elementos
         this.observeElements();
-        
-        // Animación de números para estadísticas
         this.animateStats();
     }
 
@@ -27,8 +24,6 @@ class AboutPage {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate-in');
-                    
-                    // Animar elementos hijos con delay
                     const children = entry.target.querySelectorAll('.value-item, .team-member, .stat-card');
                     children.forEach((child, index) => {
                         setTimeout(() => {
@@ -39,7 +34,6 @@ class AboutPage {
             });
         }, options);
 
-        // Observar secciones principales
         const sections = document.querySelectorAll('.stats-section, .values-section, .team-section, .mission-vision');
         sections.forEach(section => {
             observer.observe(section);
@@ -57,8 +51,6 @@ class AboutPage {
                     const animate = (currentTime) => {
                         const elapsed = currentTime - start;
                         const progress = Math.min(elapsed / duration, 1);
-                        
-                        // Usar easing para hacer la animación más suave
                         const easeOutCubic = 1 - Math.pow(1 - progress, 3);
                         const current = Math.floor(easeOutCubic * target);
                         
@@ -67,7 +59,6 @@ class AboutPage {
                         if (progress < 1) {
                             requestAnimationFrame(animate);
                         } else {
-                            // Añadir un pequeño efecto de "pop" al final
                             entry.target.style.transform = 'scale(1.1)';
                             setTimeout(() => {
                                 entry.target.style.transform = 'scale(1)';
@@ -88,7 +79,6 @@ class AboutPage {
     }
 
     setupScrollEffects() {
-        // Efecto parallax suave para el hero
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const hero = document.querySelector('.hero-about');
@@ -99,7 +89,6 @@ class AboutPage {
             }
         });
 
-        // Indicador de progreso de lectura
         this.createReadingProgressBar();
     }
 
@@ -129,13 +118,8 @@ class AboutPage {
     }
 
     setupInteractiveElements() {
-        // Efecto hover para las tarjetas del equipo
         this.setupTeamCardEffects();
-        
-        // Tooltip para los valores
         this.setupValueTooltips();
-        
-        // Smooth scroll para enlaces internos
         this.setupSmoothScroll();
     }
 
@@ -201,12 +185,10 @@ class AboutPage {
         
         document.body.appendChild(tooltip);
         
-        // Posicionar el tooltip
         const rect = event.currentTarget.getBoundingClientRect();
         tooltip.style.left = rect.left + 'px';
         tooltip.style.top = (rect.top - tooltip.offsetHeight - 10) + 'px';
         
-        // Mostrar con animación
         setTimeout(() => tooltip.style.opacity = '1', 10);
     }
 
@@ -219,7 +201,6 @@ class AboutPage {
     }
 
     setupSmoothScroll() {
-        // Detectar enlaces que apuntan a secciones de la página
         const links = document.querySelectorAll('a[href^="#"]');
         
         links.forEach(link => {
@@ -238,12 +219,10 @@ class AboutPage {
         });
     }
 
-    // Método para añadir efectos de partículas (opcional)
     addParticleEffects() {
         const hero = document.querySelector('.hero-about');
         if (!hero) return;
 
-        // Crear contenedor de partículas
         const particlesContainer = document.createElement('div');
         particlesContainer.className = 'particles-container';
         particlesContainer.style.cssText = `
@@ -259,7 +238,6 @@ class AboutPage {
         hero.style.position = 'relative';
         hero.appendChild(particlesContainer);
 
-        // Crear partículas
         for (let i = 0; i < 50; i++) {
             const particle = document.createElement('div');
             particle.className = 'particle';
@@ -278,7 +256,6 @@ class AboutPage {
             particlesContainer.appendChild(particle);
         }
 
-        // Añadir keyframes para la animación
         const style = document.createElement('style');
         style.textContent = `
             @keyframes float {
@@ -290,7 +267,6 @@ class AboutPage {
     }
 }
 
-// CSS adicional para las animaciones
 const aboutStyles = document.createElement('style');
 aboutStyles.textContent = `
     .animate-in {
@@ -335,7 +311,6 @@ aboutStyles.textContent = `
 
 document.head.appendChild(aboutStyles);
 
-// Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
     new AboutPage();
 });

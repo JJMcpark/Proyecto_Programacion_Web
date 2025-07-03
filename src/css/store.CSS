@@ -4,8 +4,6 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-
-/* Variables solo si NO están en un global.css */
 :root {
     --gris-fondo: #f5f5f5;
     --amarillo: #ffd600;
@@ -14,7 +12,6 @@
     --gris-oscuro: #232323;
     --morado: #a566e5;
 }
-
 /* --- SOLO ESTILOS DE TIENDA --- */
 
 body {
@@ -30,173 +27,6 @@ body {
     background: var(--negro);
     color: var(--amarillo);
     padding: 40px 30px;
-}
-
-.logo-small {
-    color: var(--amarillo);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    transition: color 0.2s;
-}
-.logo-small:hover {
-    color: var(--blanco);
-}
-
-.login-button {
-    background: var(--amarillo);
-    color: var(--negro);
-    border: 1px solid var(--negro);
-    padding: 8px 22px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-}
-.login-button:hover {
-    background: var(--negro);
-    color: var(--amarillo);
-    border: 1px solid var(--amarillo);
-}
-.main-nav {
-    display: flex;
-    background: var(--gris-oscuro);
-    padding: 10px 30px;
-    border-top: 2px solid var(--amarillo);
-    gap: 20px;
-}
-.main-nav a {
-    width: 100%;
-    color: var(--blanco);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 6px 18px;
-    border-radius: 15px;
-    transition: background 0.2s, color 0.2s;
-}
-.main-nav a:hover {
-    background: var(--amarillo);
-    color: var(--negro);
-}
-
-
-footer {
-    background: var(--negro);
-    color: var(--blanco);
-    padding: 0; 
-    margin-top: 40px;
-}
-
-.redes-sociales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 30px 0 10px 0;
-}
-
-.redes-sociales .icon {
-    position: static;
-    background: var(--blanco);
-    border-radius: 50%;
-    margin: 0 10px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 22px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    color: var(--negro);
-    text-decoration: none;
-}
-.redes-sociales .icon:hover {
-    color: var(--amarillo);
-    background: var(--negro);
-}
-.redes-sociales .tooltip {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    line-height: 1.5;
-    font-size: 14px;
-    background: var(--negro);
-    color: var(--amarillo);
-    padding: 5px 12px;
-    border-radius: 5px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    z-index: 2;
-}
-.redes-sociales .icon:hover .tooltip {
-    opacity: 1;
-    pointer-events: auto;
-}
-.redes-sociales .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: var(--negro);
-    bottom: -4px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-}
-
-.redes-sociales .facebook:hover,
-.redes_sociales .facebook:hover .tooltip,
-.redes_sociales .facebook:hover .tooltip::before {
-    background: #3b5999;
-    color: #fff;
-}
-.redes_sociales .twitter:hover,
-.redes_sociales .twitter:hover .tooltip,
-.redes_sociales .twitter:hover .tooltip::before {
-    background: #46c1f6;
-    color: #fff;
-}
-.redes_sociales .instagram:hover,
-.redes_sociales .instagram:hover .tooltip,
-.redes_sociales .instagram:hover .tooltip::before {
-    background: #e1306c;
-    color: #fff;
-}
-.redes_sociales .youtube:hover,
-.redes_sociales .youtube:hover .tooltip,
-.redes_sociales .youtube:hover .tooltip::before {
-    background: #de463b;
-    color: #fff;
-}
-
-
-.gym-info {
-    background: var(--gris-oscuro);
-    color: var(--amarillo);
-    text-align: center;
-    padding: 18px 0 12px 0;
-}
-.footer-logo {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 8px;
-}
-.gym-name {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 5px 0;
-    color: var(--blanco);
-}
-.copyright {
-    font-size: 13px;
-    color: #aaa;
-    margin-top: 4px;
 }
 
 @media (max-width: 900px) {
@@ -237,7 +67,6 @@ footer {
         height: 36px;
     }
 }
-
 @keyframes slide {
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
@@ -420,10 +249,6 @@ padding: 30px;
     transform: scale(1.03);
 }
 
-
-
-/* N DE PAGINACION*/
-
 .pagination {
     list-style: none;
     display: flex;
@@ -447,18 +272,12 @@ padding: 30px;
     color: var(--negro);
 }
 
-/*CUADROS DE EL CONTAINER */
 .cuadro{
     background-color: transparent;
     border-radius: 50px;
     padding: 17px;
     width: 100%;
 }
-
-
-
-/*seleccion media */
-
 @media screen and (max-width: 768px) {
     .select-order {
         float: right;             
@@ -470,9 +289,6 @@ padding: 30px;
     }
 
 }
-
-
-
 .container-products {
     display: flex;
     justify-content: space-between;
@@ -482,7 +298,6 @@ padding: 30px;
     contain: paint;
     gap: 33px;
 }
-
 .container-products .row{
     margin-top: 30px;
     display: grid;
@@ -492,8 +307,6 @@ padding: 30px;
     width: 100%;
 
 }
-
-/* Tarjeta individual de producto */
 .card {
     width: 230px;
     background-color: #fff;
@@ -505,8 +318,6 @@ padding: 30px;
     flex-direction: column;
     justify-content: center;
 }
-
-/* Imagen del producto */
 .card img {
     width: 100%;
     height: 250px;
@@ -514,8 +325,6 @@ padding: 30px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
-/* Contenedor interno del producto */
 .product-box {
     display: flex;
     flex-direction: column;
@@ -574,11 +383,6 @@ padding: 30px;
     background-color: #ffd600;
     color: var(--negro);
 }
-
-
-
-/*CARRITO*/
-
 .carrito{
     border: 1px solid #232323;
     width: 450px;
@@ -591,7 +395,6 @@ padding: 30px;
     transition: .3s;
     padding: auto;
 }
-
 .carrito .header-carrito{
     background-color: #232323;
     color: #fff;

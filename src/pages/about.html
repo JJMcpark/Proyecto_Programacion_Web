@@ -13,72 +13,123 @@
     <script src="/src/js/auth.js" defer></script>
     <script src="/src/js/footer.js" defer></script>
     <script src="/src/js/header.js" defer></script>
+    <script src="/src/js/about.js" defer></script>
+    <script src="/src/js/contactos.js" defer></script>
+    
+
 </head>
 <body>
 
     <main>
-        <section id="about" class="about-us" style="margin: 40px auto; max-width: 900px; background: var(--blanco); box-shadow: 0 4px 16px var(--sombra); padding: 30px;">
-                <h2 style="color:var(--morado);">Sobre Nosotros</h2>
-                <p>En <b>Gym Solution</b>, nos dedicamos a ofrecerte la mejor experiencia de entrenamiento. Nuestro equipo está comprometido con tu éxito y bienestar. ¡Ven y forma parte de nuestra comunidad fitness!</p>
+        <!-- Hero Section -->
+        <section class="hero-about">
+            <div class="container">
+                <h1>💪 Sobre Nosotros</h1>
+                <p>Transformando vidas a través del fitness desde 2018. Somos más que un gimnasio, somos tu familia fitness.</p>
+            </div>
         </section>
 
-        <section class="contactos-section">
-            <div class="container">
-                <h2 class="contactos-title">Contáctanos</h2>
-                <p class="contactos-subtitle">¿Tienes dudas o quieres más información? ¡Escríbenos!</p>
-                
-                <div class="contactos-content">
-                    <div class="contactos-form-container">
-                        <form class="contactos-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="nombre">Nombre</label>
-                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Correo Electrónico</label>
-                                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="telefono">Teléfono (opcional)</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999">
-                            </div>
-                            <div class="form-group">
-                                <label for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte..." rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn-enviar">
-                                ⚡ Enviar Mensaje
-                            </button>
-                        </form>
+        <!-- Estadísticas -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="2500">0</span>
+                    <div class="stat-label">Miembros Activos</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="15">+0</span>
+                    <div class="stat-label">Entrenadores Certificados</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="+15">+0</span>
+                    <div class="stat-label">Clases Semanales</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="6">0</span>
+                    <div class="stat-label">Años de Experiencia</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Misión y Visión -->
+        <section class="mission-vision">
+            <div class="mission-card">
+                <h3><i class="fas fa-bullseye"></i> Nuestra Misión</h3>
+                <p>Proporcionar un ambiente inclusivo y motivador donde cada persona pueda alcanzar sus objetivos de fitness y bienestar. Nos comprometemos a ofrecer equipamiento de última generación, programas personalizados y el apoyo de profesionales certificados para transformar vidas a través del ejercicio.</p>
+            </div>
+            <div class="vision-card">
+                <h3><i class="fas fa-eye"></i> Nuestra Visión</h3>
+                <p>Ser reconocidos como el gimnasio líder en Lima, creando una comunidad saludable y activa. Aspiramos a expandir nuestro impacto positivo, inspirando a más personas a adoptar un estilo de vida fitness y construyendo el futuro del bienestar en nuestra ciudad.</p>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="values-container">
+                <h2>Nuestros Valores</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">🤝</div>
+                        <h4>Compromiso</h4>
+                        <p>Dedicación total con cada miembro para alcanzar sus metas de fitness y bienestar personal.</p>
                     </div>
-                    
-                    <div class="contactos-info">
-                        <div class="info-card">
-                            <div class="info-icon">📍</div>
-                            <h3>Ubicación</h3>
-                            <p>Av. Principal 123<br>Lima, Perú</p>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon">📞</div>
-                            <h3>Teléfono</h3>
-                            <p>+51 999 999 999</p>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon">✉️</div>
-                            <h3>Email</h3>
-                            <p>info@gymsolution.com</p>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon">🕒</div>
-                            <h3>Horarios</h3>
-                            <p>Lun - Vie: 6:00 - 22:00<br>Sáb - Dom: 8:00 - 20:00</p>
-                        </div>
+                    <div class="value-item">
+                        <div class="value-icon">⭐</div>
+                        <h4>Excelencia</h4>
+                        <p>Estándares de calidad superiores en equipamiento, instalaciones y atención al cliente.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🌟</div>
+                        <h4>Innovación</h4>
+                        <p>Incorporamos constantemente nuevas tecnologías y métodos de entrenamiento efectivos.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">❤️</div>
+                        <h4>Comunidad</h4>
+                        <p>Fomentamos un ambiente familiar donde todos se sienten bienvenidos y motivados.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="team-section">
+            <h2>Nuestro Equipo</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">👨‍💼</div>
+                    <div class="member-info">
+                        <h3 class="member-name">Carlos Rodríguez</h3>
+                        <div class="member-role">Director General</div>
+                        <p class="member-description">Con más de 10 años de experiencia en la industria del fitness, Carlos lidera nuestro equipo con pasión y dedicación para crear la mejor experiencia de entrenamiento.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">👩‍🏫</div>
+                    <div class="member-info">
+                        <h3 class="member-name">María González</h3>
+                        <div class="member-role">Entrenadora Principal</div>
+                        <p class="member-description">Especialista certificada en entrenamiento funcional y nutrición deportiva. María diseña programas personalizados para maximizar los resultados de cada miembro.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">👨‍⚕️</div>
+                    <div class="member-info">
+                        <h3 class="member-name">Dr. Luis Pérez</h3>
+                        <div class="member-role">Fisioterapeuta</div>
+                        <p class="member-description">Médico especializado en medicina deportiva y rehabilitación. Se encarga de la prevención de lesiones y recuperación de nuestros atletas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>¿Listo para Transformar tu Vida?</h2>
+                <p>Únete a nuestra comunidad y descubre todo lo que puedes lograr con el apoyo adecuado.</p>
+                <a href="/src/index.html" class="cta-button">¡Comienza Hoy! 🚀</a>
+            </div>
+        </section>
+
+        <div id="contactos-container"></div>
 
     </main>  
 

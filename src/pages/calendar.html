@@ -13,6 +13,7 @@
     <script src="/src/js/auth.js" defer></script>
     <script src="/src/js/footer.js" defer></script>
     <script src="/src/js/header.js" defer></script>
+    <script src="/src/js/calendar.js" defer></script>
 </head>
 
 <body>
@@ -169,6 +170,47 @@
                     <span class="sunday-info">Consulta con nuestros entrenadores para programar tu sesión personalizada</span>
                 </div>
             </div>
+
+            <h1>Formulario de Inscripción al Gimnasio</h1>
+
+            <form id="formulario" class="formulario-gym">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <!--<label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required />-->
+
+                <label for="clase">Clase:</label>
+                <select id="clase" name="clase" required>
+                    <option value="">--Seleccionar clase--</option>
+                    <option>Musculación - Juan Pérez - Lunes 06:00-10:00</option>
+                    <option>CrossFit - Roberto López - Lunes 10:30-14:30</option>
+                    <option>Funcional - María Torres - Lunes 15:00-19:00</option>
+                    <option>Yoga - Ana Gómez - Martes 07:00-11:00</option>
+                    <option>Pilates (Premium) - Erika Méndez - Martes 11:30-15:30</option>
+                    <option>HIIT - José Morales - Martes 16:00-20:00</option>
+                    <option>CrossFit Elite - Pedro Sánchez - Miércoles 07:30-11:30</option>
+                    <option>Zumba - Lucía Martínez - Miércoles 12:00-16:00</option>
+                    <option>Powerlifting (Avanzada) - Ricardo Díaz - Miércoles 18:00-22:00</option>
+                    <option>Yoga Terapéutico (Premium) - Carmen Vega - Jueves 06:30-10:30</option>
+                    <option>Calistenia - Fernando Torres - Jueves 15:00-19:00</option>
+                    <option>Kickboxing - Diana Rojas - Jueves 19:30-22:30</option>
+                    <option>TRX - Marcos Pérez - Viernes 08:00-12:00</option>
+                    <option>Pole Fitness (Premium) - Sofía Luna - Viernes 12:30-16:30</option>
+                    <option>Spinning - Gabriel Ríos - Viernes 17:00-21:00</option>
+                    <option>Boot Camp (Aire libre) - Valeria Campos - Sábado 09:00-13:00</option>
+                    <option>Body Combat - Alberto Moreno - Sábado 13:30-17:30</option>
+                    <option>Baile Latino (Especial) - Isabel Quintana - Sábado 18:00-20:00</option>
+                    <option>Entrenamiento Personalizado - Horario Flexible - Domingo 08:00-15:00</option>
+                </select>
+
+                <button type="submit">Inscribirse</button>
+            </form>
+
+
         </div>
     </main>
 </body>

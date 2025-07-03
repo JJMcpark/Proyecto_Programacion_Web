@@ -12,17 +12,32 @@
         </div>
 </div>
 <div id="registerModal" class="modal" style="display: none;">
-        <div class="modal-content">
-            <span class="close" onclick="closeRegisterModal()">&times;</span>
-            <h2>Registro</h2>
-            <form>
-                <label for="modal-register-name">Nombre:</label>
-                <input type="text" id="modal-register-name" name="name" required>
-                <label for="modal-register-email">Correo Electrónico:</label>
-                <input type="email" id="modal-register-email" name="email" required>
-                <label for="modal-register-password">Contraseña:</label>
-                <input type="password" id="modal-register-password" name="password" required>
-                <button type="submit">Registrarse</button>
-            </form>
-        </div>
+    <div class="modal-content">
+        <span class="close" onclick="closeRegisterModal()">&times;</span>
+        <h2>Registro</h2>
+        <form>
+            <label for="modal-register-name">Nombre:</label>
+            <input type="text" id="modal-register-name" name="name" required>
+            
+            <label for="modal-register-lastname">Apellido:</label>
+            <input type="text" id="modal-register-lastname" name="lastname" required>
+            
+            <label for="modal-register-dni">DNI:</label>
+            <input type="text" id="modal-register-dni" name="dni" required>
+            
+            <label for="modal-register-email">Correo Electrónico:</label>
+            <input type="email" id="modal-register-email" name="email" required>
+            
+            <label for="modal-register-phone">Teléfono:</label>
+            <input type="tel" id="modal-register-phone" name="phone" required>
+            
+            <label for="modal-register-test">Prueba inicio:</label>
+            <input type="text" id="modal-register-test" name="test" required>
+            
+            <label for="modal-register-time">Hora de prueba:</label>
+            <input type="time" id="modal-register-time" name="time" required>
+            
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
 </div>
